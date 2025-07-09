@@ -1,6 +1,8 @@
 'use client'
 import { useState, useEffect, } from "react";
 import Image from "next/image";
+import { motion } from "motion/react"
+import { AnimatePresence } from "motion/react"
 
 type Image = {
     src: string;
@@ -26,18 +28,30 @@ export default function Carousel() {
             }
         };
 
-        const interval = setInterval(() => next(), 10000);
+        const interval = setInterval(() => next(), 5000);
         return () => {
             clearInterval(interval);
         }
     }, [currentSlide]);
 
     return (
-        <div className="carousel h-full">
-            <div className="carousel-item">
-                <Image width={images[currentSlide].width} height={images[currentSlide].height} src={images[currentSlide].src}
-                       className="object-cover object-center w-dvw" alt="slideshow image" priority={true} />
-            </div>
+        <div className="relative w-dvw h-full overflow-hidden -z-10">
+            <AnimatePresence mode="popLayout">
+                <motion.div
+                className="w-full h-full"
+                initial={{ x: 1250 }}
+                animate={{ x: 0 }}
+                exit={{ opacity: 0, x: -1250 }}
+                key={images[currentSlide].src}
+                transition={{ duration: 1 }}
+                >
+                    <Image
+                    src={images[currentSlide].src}
+                    width={images[currentSlide].width}
+                    height={images[currentSlide].height}
+                    className="object-cover object-center w-dvw h-full" alt="slideshow image" priority={true} />
+                </motion.div>
+            </AnimatePresence>
         </div>
     );
 }
