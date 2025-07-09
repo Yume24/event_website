@@ -35,7 +35,7 @@ export default function Carousel() {
     }, [currentSlide]);
 
     return (
-        <div className="relative w-dvw h-full overflow-hidden -z-10">
+        <div className="relative w-vw h-full overflow-hidden -z-10">
             <AnimatePresence mode="popLayout">
                 <motion.div
                 className="w-full h-full"
