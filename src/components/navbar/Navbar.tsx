@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../../../public/static/images/logo.svg";
+import logo from "../../../public/static/images/logos/logo.svg";
+import logoGT from "../../../public/static/images/logos/logoGT.png";
 import { usePathname } from "next/navigation";
 import React from "react";
 
@@ -19,13 +20,13 @@ const menuLinks: Link[] = [
             { text: "Regulamin", href: "", },
             { text: "Klasy startowe", href: "", },
             { text: "Harmonogram wystawy", href: "", },
-        ] }, // Dropdown: Regulamin, Klasy startowe, Harmonogram wystawy
+        ] },
     { text: "Konkurs GT-Cup", href: "/harmonogram", submenu: [
             { text: "Rejestracja", href: "", },
             {text: "Regulamin", href: "", },
             { text: "Wystawy", href: "", },
             { text: "Relacje", href: "", },
-        ] }, // Dropdown: Rejestracja, Regulamin, Wystawy, Relacje
+        ] },
 ];
 
 export default function Navbar() {
@@ -64,7 +65,9 @@ export default function Navbar() {
                         </div>
                         <div className="navbar-start">
                             <Image src={logo} alt="logo" width={logo.width} height={logo.height}
-                                   className="w-50 m-5"/>
+                                   className="w-25 m-5"/>
+                            <Image src={logoGT} alt="logo GT" width={logoGT.width} height={logoGT.height}
+                                   className="w-25 m-5" />
                         </div>
                         <div className="navbar-center h-full">
                             <ul className="lg:flex h-full hidden">
@@ -100,7 +103,7 @@ export default function Navbar() {
                         {menuLinks.map((link, index) => (<li key={index} className="m-1 transition-all">
                             {!link.submenu ? <Link className="hover:bg-primary text-lg" href={link.href}>{link.text}</Link> : (
                                 <div className="menu-vertical block hover:bg-neutral">
-                                    <div className="text-lg m-1">{link.text}</div>
+                                    <p className="text-lg m-1 cursor-auto">{link.text}</p>
                                     <ul className="text-sm">
                                         {link.submenu?.map((sublink, subindex) => (
                                             <li key={subindex}><Link className="m-1 hover:bg-primary text-sm" href={sublink.href}>{sublink.text}</Link></li>

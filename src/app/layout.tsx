@@ -5,8 +5,9 @@ import Navbar from "@/components/navbar/Navbar";
 
 
 export const metadata: Metadata = {
-  title: "",
-  description: "",
+  title: "II Meeting Modelarski Pojazdów Cywilnych Ogrodzieniec 2026",
+  description: "Celem wystawy i konkursu jest popularyzacja modelarstwa redukcyjnego ze szczególnym " +
+      "uwzględnieniem pojazdów cywilnych jako wartościowej formy rozwijania zainteresowań technicznych, historycznych i kreatywnych.",
 };
 
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
