@@ -34,3 +34,8 @@
     --depth: 0;
     --noise: 0;
 }
+
+.menu :where(li ul)::before {
+    background-color: var(--color-neutral-content);
+    opacity: 0.5;
+}
