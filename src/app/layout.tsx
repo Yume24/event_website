@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
   return (
-    <html lang="en" data-theme="light">
+    <html lang="pl" data-theme="light">
       <body
         className={'antialiased'}>
         <Navbar />
