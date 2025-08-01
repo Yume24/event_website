@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import type {MenuLink} from "@/components/navbar/MenuLinks";
-import {motion, AnimatePresence} from "motion/react";
+import {AnimatePresence, motion} from "motion/react";
 
 export default function NavbarVertical({menuLinks, isOpen, toggleVerticalNavbarAction}: {
     menuLinks: MenuLink[],

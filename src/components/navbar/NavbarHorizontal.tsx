@@ -52,13 +52,14 @@ export default function NavbarHorizontal({menuLinks, toggleVerticalNavbarAction}
                                     {link.text}
                                 </button>
 
-                                <ul className="dropdown dropdown-center w-30 xl:w-45 bg-primary text-primary-content"
+                                <ul className={`dropdown dropdown-center w-30 xl:w-45 bg-primary text-primary-content ${path.includes(link.href) ? "bg-primary font-bold" : ""}`}
                                     popover="auto" id={`popover-${index}`}
                                     style={{positionAnchor: `--anchor-${index}`} as React.CSSProperties}>
                                     {link.submenu?.map((sublink, subindex) => (
-                                        <li key={subindex} className="m-5">
+                                        <li key={subindex}
+                                            className="m-5 font-normal">
                                             <Link className="hover:font-bold transition-all wrap-break-word"
-                                                  href={sublink.href}>{sublink.text}</Link>
+                                                  href={link.href + sublink.href}>{sublink.text}</Link>
                                             <div className="divider divider-accent"></div>
                                         </li>
                                     ))}

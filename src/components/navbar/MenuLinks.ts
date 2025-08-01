@@ -7,7 +7,7 @@ export const menuLinks: MenuLink[] = [
     {text: "Strona główna", href: "/",},
     {text: "Aktualności", href: "/aktualnosci",},
     {
-        text: "Informacje", href: "/regulamin", submenu: [
+        text: "Informacje", href: "/informacje", submenu: [
             {text: "Regulamin", href: "",},
             {text: "Klasy startowe", href: "",},
             {text: "Harmonogram wystawy", href: "",},
@@ -15,11 +15,11 @@ export const menuLinks: MenuLink[] = [
         ]
     },
     {
-        text: "Konkurs GT-Cup", href: "/harmonogram", submenu: [
-            {text: "Rejestracja", href: "",},
-            {text: "Regulamin", href: "",},
-            {text: "Wystawy", href: "",},
-            {text: "Relacje", href: "",},
+        text: "Konkurs GT-Cup", href: "/konkurs", submenu: [
+            {text: "Zapisy", href: "/zapisy",},
+            {text: "Regulamin", href: "/regulamin",},
+            {text: "Wystawy", href: "/wystawy",},
+            {text: "Relacje", href: "/relacje",},
         ]
     },
 ];
