@@ -1,8 +1,8 @@
 'use client'
 import {useEffect, useState,} from "react";
-import Image from "next/image";
+import CarouselDisplay from "@/components/carousel/CarouselDisplay";
 
-type Image = {
+export type Image = {
     src: string;
     width: number;
     height: number
@@ -37,26 +37,5 @@ export default function Carousel() {
         }
     }, [currentSlide]);
 
-    return (
-        <div className="overflow-hidden h-full relative -z-1">
-            <div className="flex flex-row h-full transition-transform duration-1000 ease-out"
-                 style={{transform: `translateX(-${currentSlide * 100}%)`}}>
-                {images.map((image, index) => (
-                    <div
-                        className="flex-shrink-0 w-full"
-                        key={image.src}
-                    >
-                        <Image
-                            src={image.src}
-                            width={image.width}
-                            height={image.height}
-                            className="object-cover object-center w-full h-full"
-                            alt={`slideshow image ${index + 1}`}
-                            priority={index === 0}
-                        />
-                    </div>
-                ))}
-            </div>
-        </div>
-    );
+    return <CarouselDisplay images={images} currentSlide={currentSlide}/>
 }
