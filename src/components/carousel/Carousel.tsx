@@ -18,7 +18,7 @@ const images: Image[] = [
     {src: "/static/images/carousel/slideshow8.jpg", width: 1599, height: 1066},
     {src: "/static/images/carousel/slideshow9.jpg", width: 2048, height: 1148},
 ];
-
+const intervalTime = 10_000;
 export default function Carousel() {
     const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -31,7 +31,7 @@ export default function Carousel() {
             }
         };
 
-        const interval = setInterval(() => next(), 3000);
+        const interval = setInterval(() => next(), intervalTime);
         return () => {
             clearInterval(interval);
         }
@@ -39,11 +39,11 @@ export default function Carousel() {
 
     return (
         <div className="overflow-hidden h-full relative -z-1">
-            <div className="flex flex-row h-full w-full transition-transform duration-500 ease-in-out"
+            <div className="flex flex-row h-full transition-transform duration-1000 ease-out"
                  style={{transform: `translateX(-${currentSlide * 100}%)`}}>
                 {images.map((image, index) => (
                     <div
-                        className="flex-shrink-0 w-full h-full"
+                        className="flex-shrink-0 w-full"
                         key={image.src}
                     >
                         <Image
