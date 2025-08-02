@@ -32,7 +32,7 @@ export default function NavbarVertical({menuLinks, isOpen, toggleVerticalNavbarA
                                     {link.submenu?.map((sublink, subindex) => (
                                         <li key={subindex}><Link onClick={onLinkClick}
                                                                  className="m-1 hover:bg-primary text-sm"
-                                                                 href={sublink.href}>{sublink.text}</Link></li>
+                                                                 href={link.href + sublink.href}>{sublink.text}</Link></li>
                                     ))}
                                 </ul>
                             </div>
