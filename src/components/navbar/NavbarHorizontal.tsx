@@ -46,21 +46,21 @@ export default function NavbarHorizontal({menuLinks, toggleVerticalNavbarAction}
                             key={index}>
                             {!link.submenu ? <Link className="h-full flex items-center justify-center z-10 relative"
                                                    href={link.href}>{link.text}</Link> : (<>
-                                <button className="w-full h-full z-10 relative cursor-pointer"
+                                <button className="h-full w-full z-10 relative cursor-pointer"
                                         popoverTarget={`popover-${index}`}
                                         style={{anchorName: `--anchor-${index}`} as React.CSSProperties}>
                                     {link.text}
                                 </button>
 
-                                <ul className={`dropdown dropdown-center w-30 xl:w-45 bg-primary text-primary-content ${path.includes(link.href) ? "bg-primary font-bold" : ""}`}
+                                <ul className="dropdown dropdown-center w-30 xl:w-45 bg-primary text-primary-content"
                                     popover="auto" id={`popover-${index}`}
                                     style={{positionAnchor: `--anchor-${index}`} as React.CSSProperties}>
                                     {link.submenu?.map((sublink, subindex) => (
                                         <li key={subindex}
-                                            className="m-5 font-normal">
-                                            <Link className="hover:font-bold transition-all wrap-break-word"
-                                                  href={link.href + sublink.href}>{sublink.text}</Link>
-                                            <div className="divider divider-accent"></div>
+                                            className="my-1 font-normal hover:bg-secondary transition-all ">
+                                            <Link
+                                                className="p-3 w-full flex justify-center items-center wrap-break-word"
+                                                href={link.href + sublink.href}>{sublink.text}</Link>
                                         </li>
                                     ))}
                                 </ul>
