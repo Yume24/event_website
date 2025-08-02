@@ -42,11 +42,11 @@ export default function NavbarHorizontal({menuLinks, toggleVerticalNavbarAction}
             <div className="navbar-center h-full">
                 <ul className="lg:flex h-full hidden">
                     {menuLinks.map((link, index) => (
-                        <li className={`w-30 xl:w-45 text-center pl-5 pr-5 xl:text-lg transition relative group overflow-hidden ${path === link.href ? "bg-primary font-bold" : ""}`}
+                        <li className={`w-30 xl:w-45 text-center xl:text-lg transition relative group overflow-hidden ${path === link.href ? "bg-primary font-bold" : ""}`}
                             key={index}>
                             {!link.submenu ? <Link className="h-full flex items-center justify-center z-10 relative"
                                                    href={link.href}>{link.text}</Link> : (<>
-                                <button className="h-full z-10 relative cursor-pointer"
+                                <button className="w-full h-full z-10 relative cursor-pointer"
                                         popoverTarget={`popover-${index}`}
                                         style={{anchorName: `--anchor-${index}`} as React.CSSProperties}>
                                     {link.text}

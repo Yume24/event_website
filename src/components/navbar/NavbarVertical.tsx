@@ -22,7 +22,7 @@ export default function NavbarVertical({menuLinks, isOpen, toggleVerticalNavbarA
                 />
                 <motion.ul initial={{x: -500}} animate={{x: 0}} exit={{x: -500}}
                            transition={{duration: 0.25, type: "tween"}}
-                           className="overflow-auto fixed left-0 top-0 z-50 menu h-full w-80 p-4 bg-neutral text-neutral-content">
+                           className="overflow-auto fixed left-0 top-0 z-50 menu h-full w-80 p-4 bg-neutral text-neutral-content flex-nowrap">
                     {menuLinks.map((link, index) => (<li key={index} className="m-1 transition-all">
                         {!link.submenu ? <Link onClick={onLinkClick} className="hover:bg-primary text-lg"
                                                href={link.href}>{link.text}</Link> : (
