@@ -6,14 +6,24 @@ import logo from "../../../public/static/images/logos/logo.svg";
 import logoGT from "../../../public/static/images/logos/logoGT.png";
 import type {MenuLink} from "@/components/navbar/MenuLinks";
 import {usePathname} from "next/navigation";
-import React from "react";
+import React, {useEffect, useRef} from "react";
 
 export default function NavbarHorizontal({menuLinks, toggleVerticalNavbarAction}: {
     menuLinks: MenuLink[],
     toggleVerticalNavbarAction: (param: boolean) => void
 }) {
     const path = usePathname();
+    const popoverRefs = useRef<(HTMLUListElement | null)[]>([]);
 
+    const handleMouseEnter = (index: number) => {
+        popoverRefs.current[index]?.showPopover();
+    };
+    const handleMouseOut = (index: number) => {
+        popoverRefs.current[index]?.hidePopover();
+    };
+    useEffect(() => {
+        popoverRefs.current.forEach(pop => pop?.hidePopover());
+    }, [path]);
     return (
         <div className="navbar bg-neutral text-neutral-content border-b-primary border-b-3 h-25 p-0 w-full">
             <div className="flex-none lg:hidden">
@@ -48,12 +58,19 @@ export default function NavbarHorizontal({menuLinks, toggleVerticalNavbarAction}
                                                    href={link.href}>{link.text}</Link> : (<>
                                 <button className="h-full w-full z-10 relative cursor-pointer"
                                         popoverTarget={`popover-${index}`}
+                                        onMouseEnter={() => handleMouseEnter(index)}
+                                        onMouseOut={() => handleMouseOut(index)}
                                         style={{anchorName: `--anchor-${index}`} as React.CSSProperties}>
                                     {link.text}
                                 </button>
 
                                 <ul className="dropdown dropdown-center w-30 xl:w-45 bg-primary text-primary-content"
                                     popover="auto" id={`popover-${index}`}
+                                    ref={el => {
+                                        popoverRefs.current[index] = el
+                                    }}
+                                    onMouseEnter={() => handleMouseEnter(index)}
+                                    onMouseLeave={() => handleMouseOut(index)}
                                     style={{positionAnchor: `--anchor-${index}`} as React.CSSProperties}>
                                     {link.submenu?.map((sublink, subindex) => (
                                         <li key={subindex}
