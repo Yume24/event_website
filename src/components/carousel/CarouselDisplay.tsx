@@ -1,4 +1,4 @@
-import type {Image as ImageType} from "@/components/carousel/Carousel";
+import type {Image as ImageType} from "@/types/types";
 import Image from "next/image";
 
 export default function CarouselDisplay({images, currentSlide}: { images: ImageType[], currentSlide: number }) {

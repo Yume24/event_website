@@ -1,12 +1,8 @@
 'use client'
 import {useEffect, useState,} from "react";
 import CarouselDisplay from "@/components/carousel/CarouselDisplay";
+import type { Image } from "@/types/types";
 
-export type Image = {
-    src: string;
-    width: number;
-    height: number
-}
 const images: Image[] = [
     {src: "/static/images/carousel/slideshow1.jpg", width: 4080, height: 2296},
     {src: "/static/images/carousel/slideshow2.jpg", width: 2048, height: 1536},
