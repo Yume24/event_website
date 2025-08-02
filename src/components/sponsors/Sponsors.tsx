@@ -12,7 +12,7 @@ export default function Sponsors() {
     return (
         <div className="my-10 flex justify-center items-center gap-20 flex-wrap">
             {images.map(image => (
-                <Image key={image.src} className="w-40" src={image.src} width={image.width} height={image.height} alt={image.alt}/>
+                <Image key={image.src} className="w-40" src={image.src} width={image.width} height={image.height} alt={image.alt || "logo"}/>
             ))}
         </div>
     );
