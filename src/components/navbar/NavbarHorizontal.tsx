@@ -57,7 +57,7 @@ export default function NavbarHorizontal({menuLinks, toggleVerticalNavbarAction}
                                     style={{positionAnchor: `--anchor-${index}`} as React.CSSProperties}>
                                     {link.submenu?.map((sublink, subindex) => (
                                         <li key={subindex}
-                                            className="my-1 font-normal hover:bg-secondary transition-all ">
+                                            className="my-1 font-normal hover:bg-secondary transition-all">
                                             <Link
                                                 className="p-3 w-full flex justify-center items-center wrap-break-word"
                                                 href={link.href + sublink.href}>{sublink.text}</Link>
