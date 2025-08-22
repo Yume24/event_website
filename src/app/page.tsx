@@ -16,6 +16,9 @@ export default function Home() {
                     <h2 className="text-4xl m-10 text-center">Nasi Sponsorzy:</h2>
                     <Sponsors/>
                 </section>
+                <section>
+                    <h2 className="text-4xl m-10 text-center">Patroni Medialni:</h2>
+                </section>
             </main>
         </>
     )
