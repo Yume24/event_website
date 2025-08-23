@@ -1,6 +1,6 @@
 import Image from "next/image";
-import logo from "../../../public/static/images/logos/logo.svg";
-import logoGT from "../../../public/static/images/logos/logoGT.png";
+import logo from "../../../../public/static/images/logos/logo.svg";
+import logoGT from "../../../../public/static/images/logos/logoGT.png";
 import React from "react";
 
 export default function Logos() {

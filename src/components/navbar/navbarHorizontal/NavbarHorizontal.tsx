@@ -1,12 +1,12 @@
 'use client'
 
 import Link from "next/link";
-import type {MenuLink} from "@/components/navbar/MenuLinks";
+import type {MenuLink} from "@/types/types";
 import {usePathname} from "next/navigation";
-import HamburgerButton from "@/components/navbar/HamburgerButton";
-import Logos from "@/components/navbar/Logos";
-import AuthButtons from "@/components/navbar/AuthButtons";
-import Submenu from "@/components/navbar/Submenu";
+import HamburgerButton from "@/components/navbar/navbarHorizontal/HamburgerButton";
+import Logos from "@/components/navbar/navbarHorizontal/Logos";
+import AuthButtons from "@/components/navbar/navbarHorizontal/AuthButtons";
+import Submenu from "@/components/navbar/navbarHorizontal/Submenu";
 
 export default function NavbarHorizontal({menuLinks, toggleVerticalNavbarAction}: {
     menuLinks: MenuLink[],

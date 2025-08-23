@@ -1,8 +1,8 @@
 'use client'
 
 import {useState} from "react";
-import NavbarHorizontal from "@/components/navbar/NavbarHorizontal";
-import NavbarVertical from "@/components/navbar/NavbarVertical";
+import NavbarHorizontal from "@/components/navbar/navbarHorizontal/NavbarHorizontal";
+import NavbarVertical from "@/components/navbar/navbarVertical/NavbarVertical";
 import {menuLinks} from "@/components/navbar/MenuLinks";
 
 export default function Navbar() {
