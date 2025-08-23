@@ -4,3 +4,9 @@ export type Image = {
     height: number;
     alt?: string
 }
+
+export type MenuLink = {
+    text: string;
+    href: string;
+    submenu?: MenuLink[];
+}
