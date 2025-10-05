@@ -1,4 +1,5 @@
 import Carousel from "@/components/carousel/Carousel";
+import Link from "next/link";
 
 export default function Hero() {
     return (
@@ -17,7 +18,7 @@ export default function Hero() {
                             cywilnych jako wartościowej formy rozwijania zainteresowań technicznych, historycznych i
                             kreatywnych.
                         </p>
-                        <button className="btn btn-lg btn-primary">Rejestracja</button>
+                        <Link href='/rejestracja'><button className="btn btn-lg btn-primary">Rejestracja</button></Link>
                     </div>
                 </div>
                 <Carousel/>

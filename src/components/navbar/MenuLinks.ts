@@ -5,7 +5,7 @@ export const menuLinks: MenuLink[] = [
     {text: "Aktualności", href: "/aktualnosci",},
     {
         text: "Informacje", href: "/informacje", submenu: [
-            {text: "Regulamin", href: "/regulamin.pdf",},
+            {text: "Regulamin", href: "/regulamin",},
             {text: "Klasy startowe", href: "/klasy-startowe",},
             {text: "Harmonogram wystawy", href: "/harmonogram",},
             {text: "Kalendarz modelarski", href: "/kalendarz",},
@@ -14,7 +14,7 @@ export const menuLinks: MenuLink[] = [
     {
         text: "Konkurs GT-Cup", href: "/konkurs", submenu: [
             {text: "Zapisy", href: "/zapisy",},
-            {text: "Regulamin", href: "/regulamin_GT.pdf",},
+            {text: "Regulamin", href: "/regulamin_GT",},
             {text: "Wystawy", href: "/wystawy",},
             {text: "Relacje", href: "/relacje",},
         ]
