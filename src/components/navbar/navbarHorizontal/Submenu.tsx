@@ -1,5 +1,5 @@
 import Link from "next/link";
-import type {MenuLink} from "@/components/navbar/MenuLinks";
+import {MenuLink} from "@/types/types";
 
 export default function Submenu({link}: { link: MenuLink }) {
     return (

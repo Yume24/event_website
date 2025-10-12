@@ -1,5 +1,5 @@
 import Link from "next/link";
-import {MenuLink} from "@/components/navbar/MenuLinks";
+import {MenuLink} from "@/types/types";
 
 export default function SubmenuVertical({link, onLinkClick}: { link: MenuLink, onLinkClick: () => void }) {
     return (<ul className="text-sm">
