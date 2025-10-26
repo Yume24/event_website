@@ -1,12 +1,12 @@
 export type Image = {
-    src: string;
-    width: number;
-    height: number;
-    alt?: string
-}
+  src: string;
+  width: number;
+  height: number;
+  alt?: string;
+};
 
 export type MenuLink = {
-    text: string;
-    href: string;
-    submenu?: MenuLink[];
-}
+  text: string;
+  href: string;
+  submenu?: MenuLink[];
+};
