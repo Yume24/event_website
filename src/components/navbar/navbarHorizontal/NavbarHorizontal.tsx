@@ -31,12 +31,23 @@ export default function NavbarHorizontal({
               key={index}
             >
               {!link.submenu ? (
-                <Link
-                  className="h-full flex items-center justify-center z-10 relative"
-                  href={link.href}
-                >
-                  {link.text}
-                </Link>
+                link.href.startsWith('http') ? (
+                  <a
+                    className="h-full flex items-center justify-center z-10 relative"
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {link.text}
+                  </a>
+                ) : (
+                  <Link
+                    className="h-full flex items-center justify-center z-10 relative"
+                    href={link.href}
+                  >
+                    {link.text}
+                  </Link>
+                )
               ) : (
                 <>
                   <button className="h-full w-full z-10 relative cursor-pointer">

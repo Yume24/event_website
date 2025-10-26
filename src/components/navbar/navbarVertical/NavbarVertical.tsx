@@ -38,13 +38,25 @@ export default function NavbarVertical({
             {menuLinks.map((link) => (
               <li key={link.href} className="m-1 transition-all">
                 {!link.submenu ? (
-                  <Link
-                    onClick={onLinkClick}
-                    className="hover:bg-primary text-lg"
-                    href={link.href}
-                  >
-                    {link.text}
-                  </Link>
+                  link.href.startsWith('http') ? (
+                    <a
+                      onClick={onLinkClick}
+                      className="hover:bg-primary text-lg"
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {link.text}
+                    </a>
+                  ) : (
+                    <Link
+                      onClick={onLinkClick}
+                      className="hover:bg-primary text-lg"
+                      href={link.href}
+                    >
+                      {link.text}
+                    </Link>
+                  )
                 ) : (
                   <div className="menu-vertical block hover:bg-neutral">
                     <p className="text-lg m-1 cursor-auto">{link.text}</p>

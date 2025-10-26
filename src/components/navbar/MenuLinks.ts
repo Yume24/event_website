@@ -2,7 +2,7 @@ import { MenuLink } from '@/types/types';
 
 export const menuLinks: MenuLink[] = [
   { text: 'Strona główna', href: '/' },
-  { text: 'Aktualności', href: '/aktualnosci' },
+  { text: 'Aktualności', href: 'https://www.facebook.com/share/19g6sMLoXp' },
   {
     text: 'Informacje',
     href: '/informacje',
