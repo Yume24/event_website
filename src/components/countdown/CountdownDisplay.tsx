@@ -15,6 +15,7 @@ export default function CountdownDisplay({
 }) {
   return (
     <>
+      {/* eslint-disable-next-line react/no-unknown-property */}
       <style jsx>
         {`
           .countdown > *:before {
