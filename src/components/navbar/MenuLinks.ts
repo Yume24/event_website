@@ -10,8 +10,8 @@ export const menuLinks: MenuLink[] = [
       { text: 'Regulamin', href: '/regulamin' },
       { text: 'Klasy startowe', href: '/klasy-startowe' },
       { text: 'Harmonogram wystawy', href: '/harmonogram' },
-      { text: 'Kalendarz modelarski', href: '/kalendarz' },
-      { text: 'Wyniki', href: '/wyniki' }
+      { text: 'Wyniki', href: '/wyniki' },
+      { text: 'Kalendarz modelarski', href: '/kalendarz' }
     ]
   },
   {
