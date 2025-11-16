@@ -10,7 +10,8 @@ export const menuLinks: MenuLink[] = [
       { text: 'Regulamin', href: '/regulamin' },
       { text: 'Klasy startowe', href: '/klasy-startowe' },
       { text: 'Harmonogram wystawy', href: '/harmonogram' },
-      { text: 'Kalendarz modelarski', href: '/kalendarz' }
+      { text: 'Kalendarz modelarski', href: '/kalendarz' },
+      { text: 'Wyniki', href: '/wyniki' }
     ]
   },
   {
@@ -20,7 +21,8 @@ export const menuLinks: MenuLink[] = [
       { text: 'Zapisy', href: '/zapisy' },
       { text: 'Regulamin', href: '/regulamin_GT' },
       { text: 'Wystawy', href: '/wystawy' },
-      { text: 'Relacje', href: '/relacje' }
+      { text: 'Relacje', href: '/relacje' },
+      { text: 'Wyniki konkursu', href: '/wyniki' }
     ]
   }
 ];
