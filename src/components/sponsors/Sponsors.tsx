@@ -15,10 +15,10 @@ const images: ImageType[] = [
     alt: 'logo paint forge'
   },
   {
-    src: '/static/images/sponsors/umig-ogrodzieniec.jpg',
-    width: 496,
-    height: 572,
-    alt: 'logo UMIG Ogrodzieniec'
+    src: '/static/images/sponsors/DetalHobby.jpg',
+    width: 1200,
+    height: 1200,
+    alt: 'logo DetalHobby'
   },
   {
     src: '/static/images/sponsors/yamamoto.png',
@@ -27,22 +27,22 @@ const images: ImageType[] = [
     alt: 'logo yamamoto'
   },
   {
-    src: '/static/images/sponsors/acsm.jpg',
-    width: 960,
-    height: 720,
-    alt: 'logo ACSM'
+    src: '/static/images/sponsors/maxhobby.jpg',
+    width: 509,
+    height: 509,
+    alt: 'logo MaxHobby'
   },
   {
-    src: '/static/images/sponsors/banzai.jpg',
-    width: 1920,
-    height: 1920,
-    alt: 'logo Banzai'
+    src: '/static/images/sponsors/arma_hobby.png',
+    width: 319,
+    height: 135,
+    alt: 'logo arma hobby'
   },
   {
-    src: '/static/images/sponsors/DetalHobby.jpg',
-    width: 1200,
-    height: 1200,
-    alt: 'logo DetalHobby'
+    src: '/static/images/sponsors/umig-ogrodzieniec.jpg',
+    width: 496,
+    height: 572,
+    alt: 'logo UMIG Ogrodzieniec'
   },
   {
     src: '/static/images/sponsors/fundacja-bonera.jpg',
@@ -55,12 +55,6 @@ const images: ImageType[] = [
     width: 775,
     height: 300,
     alt: 'logo system'
-  },
-  {
-    src: '/static/images/sponsors/maxhobby.jpg',
-    width: 509,
-    height: 509,
-    alt: 'logo MaxHobby'
   }
 ];
 export default function Sponsors() {
