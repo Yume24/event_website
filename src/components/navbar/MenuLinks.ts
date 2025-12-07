@@ -18,10 +18,9 @@ export const menuLinks: MenuLink[] = [
     text: 'Konkurs GT-Cup',
     href: '/konkurs',
     submenu: [
-      { text: 'Zapisy', href: '/zapisy' },
       { text: 'Regulamin', href: '/regulamin_GT' },
-      { text: 'Wystawy', href: '/wystawy' },
-      { text: 'Relacje', href: '/relacje' },
+      { text: 'Kalendarz wystaw', href: '/wystawy' },
+      { text: 'Galerie', href: '/galerie' },
       { text: 'Wyniki konkursu', href: '/wyniki' }
     ]
   }
