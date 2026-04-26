@@ -15,6 +15,24 @@ export const menuLinks: MenuLink[] = [
     ]
   },
   {
+    text: 'Przyjazd',
+    href: '/przyjazd',
+    submenu: [
+      { text: 'Dojazd', href: '/dojazd' },
+      { text: 'Turystyka', href: '/turystyka' },
+      { text: 'Noclegi', href: '/noclegi' }
+    ]
+  },
+  { text: 'Nasi Partnerzy', href: '/nasi-partnerzy' },
+  {
+    text: 'Galeria Zdjęć',
+    href: '/galeria',
+    submenu: [
+      { text: 'I Meeting', href: '/i-meeting' },
+      { text: 'II Meeting', href: '/ii-meeting' }
+    ]
+  },
+  {
     text: 'Konkurs GT-Cup',
     href: '/konkurs',
     submenu: [

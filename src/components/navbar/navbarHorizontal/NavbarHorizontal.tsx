@@ -27,7 +27,7 @@ export default function NavbarHorizontal({
         <ul className="lg:flex h-full hidden">
           {menuLinks.map((link, index) => (
             <li
-              className={`group w-30 xl:w-45 text-center xl:text-lg transition relative ${path === link.href ? 'bg-primary font-bold' : ''}`}
+              className={`group w-24 xl:w-36 text-center text-xs xl:text-sm transition relative ${path === link.href ? 'bg-primary font-bold' : ''}`}
               key={index}
             >
               {!link.submenu ? (

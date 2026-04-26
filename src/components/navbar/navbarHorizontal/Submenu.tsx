@@ -3,7 +3,7 @@ import { MenuLink } from '@/types/types';
 
 export default function Submenu({ link }: { link: MenuLink }) {
   return (
-    <ul className="hidden group-hover:block w-30 xl:w-45 bg-primary text-primary-content absolute top-full left-0 z-50">
+    <ul className="hidden group-hover:block w-24 xl:w-36 bg-primary text-primary-content absolute top-full left-0 z-50">
       {link.submenu?.map((sublink) => (
         <li
           key={sublink.href}

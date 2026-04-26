@@ -8,13 +8,7 @@ const images: ImageType[] = [
     height: 1146,
     alt: 'logo eastmodels'
   },
-  {
-    src: '/static/images/patrons/kagero.png',
-    width: 200,
-    height: 200,
-    alt: 'logo kagero'
-  },
-  {
+{
     src: '/static/images/patrons/minfo.jpg',
     width: 1000,
     height: 1000,
@@ -29,7 +23,7 @@ const images: ImageType[] = [
 ];
 export default function Patrons() {
   return (
-    <div className="my-10 flex justify-center items-center gap-20 flex-wrap">
+    <div className="my-10 px-10 md:px-20 flex justify-center items-center gap-20 flex-wrap">
       {images.map((image) => (
         <Image
           key={image.src}

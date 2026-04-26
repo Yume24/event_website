@@ -11,14 +11,14 @@ export default function Logos() {
         alt="logo"
         width={logo.width}
         height={logo.height}
-        className="w-25 m-5"
+        className="w-16 m-3"
       />
       <Image
         src={logoGT}
         alt="logo GT"
         width={logoGT.width}
         height={logoGT.height}
-        className="w-25 m-5"
+        className="w-16 m-3"
       />
     </div>
   );

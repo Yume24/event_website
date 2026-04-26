@@ -59,7 +59,7 @@ const images: ImageType[] = [
 ];
 export default function Sponsors() {
   return (
-    <div className="my-10 flex justify-center items-center gap-20 flex-wrap">
+    <div className="my-10 px-10 md:px-20 flex justify-center items-center gap-20 flex-wrap">
       {images.map((image) => (
         <Image
           key={image.src}
