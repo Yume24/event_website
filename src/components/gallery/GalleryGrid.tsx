@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useCallback, useEffect, useRef, useState } from 'react';
 
 type Dims = { w: number; h: number };
@@ -78,13 +79,13 @@ export default function GalleryGrid({ folder, count }: { folder: string; count: 
     <>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {Array.from({ length: count }, (_, i) => (
-          // eslint-disable-next-line @next/next/no-img-element
-          <button key={i} className="relative aspect-square overflow-hidden rounded" onClick={() => open(i)}>
-            <img
+          <button key={i} className="relative aspect-square" onClick={() => open(i)}>
+            <Image
               src={`/static/images/gallery/${folder}/zdj${i + 1}.jpg`}
               alt={`Zdjęcie ${i + 1}`}
-              loading="lazy"
-              className="absolute inset-0 w-full h-full object-cover hover:brightness-90 transition-[filter]"
+              fill
+              className="object-cover rounded hover:brightness-90 transition-[filter]"
+              sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
             />
           </button>
         ))}
@@ -110,17 +111,19 @@ export default function GalleryGrid({ folder, count }: { folder: string; count: 
           }}
         >
           {selected !== null && (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img
+            <Image
               key={selected}
               src={`/static/images/gallery/${folder}/zdj${selected + 1}.jpg`}
               alt={`Zdjęcie ${selected + 1}`}
+              fill
+              sizes="90vw"
+              className="object-contain"
               onLoad={e => onImgLoad(selected, e)}
-              className="w-full h-full object-contain"
               style={{
                 opacity: loading ? 0 : 1,
                 transition: 'opacity 200ms ease-in-out',
               }}
+              priority
             />
           )}
 

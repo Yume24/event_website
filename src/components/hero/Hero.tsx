@@ -8,7 +8,7 @@ export default function Hero() {
         <div className="hero-content text-neutral-content text-center bg-neutral/90 p-5 md:p-15">
           <div className="max-w-xl">
             <h1 className="mb-10 text-2xl lg:text-5xl font-bold">
-              Meeting Modelarski Pojazdów Cywilnych
+              III Meeting Modelarski Pojazdów Cywilnych
             </h1>
             <div className="sm:divider sm:divider-primary m-5">
               <h2 className="text-md lg:text-2xl font-bold">

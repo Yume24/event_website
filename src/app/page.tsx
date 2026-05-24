@@ -51,7 +51,7 @@ export default function Home() {
           </ul>
           <p>
             Obecnie przygotowujemy trzecią edycję Meetingu – to nie tylko kontynuacja tradycji,
-            ale przede wszystkim rozwój. Rozszerzamy formułę o nowe podkategorie i nagrody
+            ale przede wszystkim rozwój. Rozszerzamy formułę o nowe kategorie i nagrody
             specjalne, by uczynić ją jeszcze bardziej atrakcyjną zarówno dla doświadczonych
             modelarzy, jak i zwiedzających.
           </p>
