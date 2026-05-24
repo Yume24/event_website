@@ -1,7 +1,4 @@
-import Image from 'next/image';
-
-const FOLDER = 'Ogrodzieniec 2025';
-const COUNT = 6;
+import GalleryGrid from '@/components/gallery/GalleryGrid';
 
 export default function GaleriaIMeeting() {
   return (
@@ -10,19 +7,7 @@ export default function GaleriaIMeeting() {
         <h1 className="text-3xl md:text-4xl font-bold text-primary border-b-2 border-primary pb-2 mb-8">
           I Meeting Modelarski – Ogrodzieniec 2025
         </h1>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {Array.from({ length: COUNT }, (_, i) => (
-            <div key={i} className="relative aspect-square">
-              <Image
-                src={`/static/images/gallery/${FOLDER}/zdj${i + 1}.jpg`}
-                alt={`Zdjęcie ${i + 1}`}
-                fill
-                className="object-cover rounded"
-                sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
-              />
-            </div>
-          ))}
-        </div>
+        <GalleryGrid folder="Ogrodzieniec 2025" count={6} />
       </section>
     </main>
   );
