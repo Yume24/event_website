@@ -1,12 +1,22 @@
 import Hero from '@/components/hero/Hero';
+import Countdown from '@/components/countdown/Countdown';
 import Sponsors from '@/components/sponsors/Sponsors';
 import Patrons from '@/components/sponsors/Patrons';
+
+const EVENT_DATE = new Date('Apr 3, 2027 8:00:00');
 
 export default function Home() {
   return (
     <>
       <Hero />
       <main>
+        <section>
+          <h2 className="text-4xl m-10 text-center">
+            Do rozpoczęcia konkursu pozostało:
+          </h2>
+          <Countdown dateToCountdown={EVENT_DATE} />
+        </section>
+        <div className="divider divider-neutral opacity-50 w-1/2 m-auto"></div>
         <section className="mx-32 py-16 space-y-6 text-base-content">
           <p>
             Nasza inicjatywa narodziła się z autentycznej pasji do motoryzacji w skali mikro.

@@ -6,7 +6,7 @@ const events: { name: string; href?: string }[] = [
     name: 'Ogólnopolski Konkurs Modeli Redukcyjnych Strzelec',
     href: '/galeria/strzelec-2026'
   },
-  { name: 'Rybnicki Festiwal Modelarski HOYM MODEL FEST' },
+  { name: 'Rybnicki Festiwal Modelarski HOYM MODEL FEST', href: '/galeria/hoym-model-fest' },
   { name: 'Inowrocławski Konkurs Modelarski' },
   { name: 'Międzynarodowy Konkurs Modeli Kartonowych i Plastikowych Radków' },
   { name: 'XV Bałtycki Festiwal Modelarski' },
