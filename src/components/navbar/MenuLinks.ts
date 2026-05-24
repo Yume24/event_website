@@ -15,7 +15,7 @@ export const menuLinks: MenuLink[] = [
     ]
   },
   {
-    text: 'Przyjazd',
+    text: 'Zaplanuj pobyt',
     href: '/przyjazd',
     submenu: [
       { text: 'Dojazd', href: '/dojazd' },
