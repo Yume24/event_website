@@ -78,17 +78,19 @@ export default function KlasyKonkursowe() {
           ))}
         </ul>
 
-        <div className="alert alert-soft shadow-md border mt-10 flex-col items-start gap-2">
-          <p className="text-sm leading-relaxed">
-            Kategorie O-1 do O-25 przeznaczone są wyłącznie dla kategorii
-            wiekowej Senior. Młodzicy i Juniorzy zgłaszają swoje modele zależnie
-            od materiału: plastik/karton do dedykowanej kategorii od O-26 do
-            O-28.
-          </p>
-          <p className="text-sm leading-relaxed">
-            Organizator ma prawo do łączenia kategorii w przypadku niewielkiej
-            ilości modeli w danej kategorii.
-          </p>
+        <div className="alert alert-soft shadow-md border mt-10">
+          <div className="space-y-2">
+            <p className="text-sm leading-relaxed">
+              Kategorie O-1 do O-25 przeznaczone są wyłącznie dla kategorii
+              wiekowej Senior. Młodzicy i Juniorzy zgłaszają swoje modele
+              zależnie od materiału: plastik/karton do dedykowanej kategorii od
+              O-26 do O-28.
+            </p>
+            <p className="text-sm leading-relaxed">
+              Organizator ma prawo do łączenia kategorii w przypadku niewielkiej
+              ilości modeli w danej kategorii.
+            </p>
+          </div>
         </div>
       </section>
     </main>
