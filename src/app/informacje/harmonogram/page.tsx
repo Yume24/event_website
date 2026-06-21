@@ -9,12 +9,12 @@ export default function ProgramWydarzenia() {
         {/* Friday */}
         <div className="mb-10">
           <h2 className="text-xl font-semibold mb-2">
-            10 kwietnia 2026 r. (piątek)
+            2 kwietnia 2027 r. (piątek)
           </h2>
           <ul className="space-y-2 border-l-2 border-primary pl-4">
             <li className="flex items-start gap-2">
               <span className="font-medium">17:00–19:00</span>
-              <span>– przyjmowanie modeli (bez wydawania kart)</span>
+              <span>– przyjmowanie modeli</span>
             </li>
           </ul>
         </div>
@@ -22,12 +22,12 @@ export default function ProgramWydarzenia() {
         {/* Saturday */}
         <div className="mb-10">
           <h2 className="text-xl font-semibold mb-2">
-            11 kwietnia 2026 r. (sobota)
+            3 kwietnia 2027 r. (sobota)
           </h2>
           <ul className="space-y-2 border-l-2 border-primary pl-4">
             <li className="flex items-start gap-2">
-              <span className="font-medium">08:00–10:00</span>
-              <span>– przyjmowanie modeli, wydawanie kart startowych</span>
+              <span className="font-medium">08:00–10:30</span>
+              <span>– przyjmowanie modeli</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="font-medium">10:00</span>
@@ -46,11 +46,11 @@ export default function ProgramWydarzenia() {
               <span>– praca komisji sędziowskich</span>
             </li>
             <li className="flex items-start gap-2">
-              <span className="font-medium">16:00</span>
+              <span className="font-medium">15:30–16:00</span>
               <span>– odbiór modeli</span>
             </li>
             <li className="flex items-start gap-2">
-              <span className="font-medium">16:30</span>
+              <span className="font-medium">16:00</span>
               <span>– ogłoszenie wyników konkursu i wręczenie nagród</span>
             </li>
           </ul>
