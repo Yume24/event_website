@@ -26,7 +26,7 @@ export default function ProgramWydarzenia() {
           </h2>
           <ul className="space-y-2 border-l-2 border-primary pl-4">
             <li className="flex items-start gap-2">
-              <span className="font-medium">08:00–10:30</span>
+              <span className="font-medium">08:30–12:30</span>
               <span>– przyjmowanie modeli</span>
             </li>
             <li className="flex items-start gap-2">
@@ -34,23 +34,36 @@ export default function ProgramWydarzenia() {
               <span>– oficjalne otwarcie wystawy</span>
             </li>
             <li className="flex items-start gap-2">
-              <span className="font-medium">10:00–15:00</span>
+              <span className="font-medium">10:00–16:00</span>
               <span>– warsztaty modelarskie dla dzieci</span>
             </li>
             <li className="flex items-start gap-2">
-              <span className="font-medium">10:00–16:00</span>
+              <span className="font-medium">10:00–17:00</span>
               <span>– zwiedzanie ekspozycji, giełda modelarska</span>
             </li>
             <li className="flex items-start gap-2">
-              <span className="font-medium">10:30–14:00</span>
+              <span className="font-medium">13:00</span>
               <span>– praca komisji sędziowskich</span>
             </li>
+          </ul>
+        </div>
+
+        {/* Sunday */}
+        <div className="mb-10">
+          <h2 className="text-xl font-semibold mb-2">
+            4 kwietnia 2027 r. (niedziela)
+          </h2>
+          <ul className="space-y-2 border-l-2 border-primary pl-4">
             <li className="flex items-start gap-2">
-              <span className="font-medium">15:30–16:00</span>
+              <span className="font-medium">09:00–13:00</span>
+              <span>– zwiedzanie ekspozycji, giełda modelarska</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="font-medium">12:30–13:00</span>
               <span>– odbiór modeli</span>
             </li>
             <li className="flex items-start gap-2">
-              <span className="font-medium">16:00</span>
+              <span className="font-medium">13:00</span>
               <span>– ogłoszenie wyników konkursu i wręczenie nagród</span>
             </li>
           </ul>

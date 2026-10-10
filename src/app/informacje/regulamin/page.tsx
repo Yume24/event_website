@@ -135,44 +135,47 @@ export default function Regulamin() {
                     </li>
                   </ul>
                 </div>
-
                 <div>
-                  <h4 className="font-medium text-base-content/90 mb-2">
-                    3 kwietnia 2027 r. (sobota)
-                  </h4>
-                  <ul className="list-disc list-inside space-y-1 pl-2 text-base-content/90">
-                    <li>
-                      <span className="font-semibold">08:00–10:30</span> –
-                      przyjmowanie modeli
-                    </li>
-                    <li>
-                      <span className="font-semibold">10:00</span> – oficjalne
-                      otwarcie wystawy
-                    </li>
-                    <li>
-                      <span className="font-semibold">10:00–15:00</span> –
-                      warsztaty modelarskie dla dzieci
-                    </li>
-                    <li>
-                      <span className="font-semibold">10:00–16:00</span> –
-                      zwiedzanie ekspozycji, giełda modelarska
-                    </li>
-                    <li>
-                      <span className="font-semibold">10:30–14:00</span> – praca
-                      komisji sędziowskich
-                    </li>
-                    <li>
-                      <span className="font-semibold">15:30–16:00</span> – odbiór
-                      modeli
-                    </li>
-                    <li>
-                      <span className="font-semibold">16:00</span> – ogłoszenie
-                      wyników konkursu i wręczenie nagród
-                    </li>
-                  </ul>
+                  <div>
+                    <h4 className="font-medium text-base-content/90 mb-2">
+                      3 kwietnia 2027 r. (sobota)
+                    </h4>
+                    <ul className="list-disc list-inside space-y-1 pl-2 text-base-content/90">
+                      <li>
+                        <span className="font-semibold">08:30–12:30</span> – przyjmowanie modeli
+                      </li>
+                      <li>
+                        <span className="font-semibold">10:00</span> – oficjalne otwarcie wystawy
+                      </li>
+                      <li>
+                        <span className="font-semibold">10:00–16:00</span> – warsztaty modelarskie dla dzieci
+                      </li>
+                      <li>
+                        <span className="font-semibold">10:00–17:00</span> – zwiedzanie ekspozycji, giełda modelarska
+                      </li>
+                      <li>
+                        <span className="font-semibold">13:00</span> – praca komisji sędziowskich
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-medium text-base-content/90 mb-2">
+                      4 kwietnia 2027 r. (niedziela)
+                    </h4>
+                    <ul className="list-disc list-inside space-y-1 pl-2 text-base-content/90">
+                      <li>
+                        <span className="font-semibold">09:00–13:00</span> – zwiedzanie ekspozycji, giełda modelarska
+                      </li>
+                      <li>
+                        <span className="font-semibold">12:30–13:00</span> – odbiór modeli
+                      </li>
+                      <li>
+                        <span className="font-semibold">13:00</span> – ogłoszenie wyników konkursu i wręczenie nagród
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-
               <div className="alert alert-soft shadow-sm border mt-3 text-sm">
                 Organizator zastrzega możliwość zmian w programie z odpowiednim
                 wyprzedzeniem za pośrednictwem strony internetowej i mediów
