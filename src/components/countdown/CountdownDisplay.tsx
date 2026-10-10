@@ -1,4 +1,7 @@
+'use client';
+
 import React from 'react';
+import { useGT, useLocale } from 'gt-next';
 
 export default function CountdownDisplay({
   days,
@@ -13,6 +16,12 @@ export default function CountdownDisplay({
   seconds: number;
   dayText: string;
 }) {
+  const gt = useGT();
+  const locale = useLocale();
+
+  const displayDayText =
+    locale === 'en' ? (days === 1 ? 'day' : 'days') : dayText;
+
   return (
     <>
       <div className="grid grid-flow-col gap-1 md:gap-5 text-center auto-cols-max justify-center m-10 scale-80 sm:scale-100">
@@ -26,7 +35,7 @@ export default function CountdownDisplay({
               {days}
             </span>
           </span>
-          {dayText}
+          {displayDayText}
         </div>
         <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
           <span className="countdown font-mono text-5xl">
@@ -38,7 +47,7 @@ export default function CountdownDisplay({
               {hours}
             </span>
           </span>
-          godz.
+          {gt('godz.')}
         </div>
         <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
           <span className="countdown font-mono text-5xl">
@@ -50,7 +59,7 @@ export default function CountdownDisplay({
               {minutes}
             </span>
           </span>
-          min
+          {gt('min')}
         </div>
         <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
           <span className="countdown font-mono text-5xl">
@@ -62,7 +71,7 @@ export default function CountdownDisplay({
               {seconds}
             </span>
           </span>
-          sek
+          {gt('sek')}
         </div>
       </div>
     </>

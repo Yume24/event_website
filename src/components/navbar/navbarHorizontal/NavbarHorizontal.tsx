@@ -7,6 +7,7 @@ import HamburgerButton from '@/components/navbar/navbarHorizontal/HamburgerButto
 import Logos from '@/components/navbar/navbarHorizontal/Logos';
 import AuthButtons from '@/components/navbar/navbarHorizontal/AuthButtons';
 import Submenu from '@/components/navbar/navbarHorizontal/Submenu';
+import LanguageSelector from '@/components/navbar/LanguageSelector';
 
 export default function NavbarHorizontal({
   menuLinks,
@@ -61,7 +62,8 @@ export default function NavbarHorizontal({
           ))}
         </ul>
       </div>
-      <div className="navbar-end">
+      <div className="navbar-end flex items-center gap-2 mr-4">
+        <LanguageSelector />
         <AuthButtons />
       </div>
     </div>

@@ -1,0 +1,13 @@
+{
+  "defaultLocale": "pl",
+  "locales": ["pl", "en"],
+  "files": {
+    "gt": {
+      "output": "public/_gt/[locale].json",
+      "parsingFlags": {
+        "enableAutoJsxInjection": true,
+        "autoderive": true
+      }
+    }
+  }
+}

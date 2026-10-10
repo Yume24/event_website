@@ -1,9 +1,15 @@
+'use client';
+
+import { useLocale } from 'gt-next';
+
 type Result = { name: string; model: string; city: string; country: string };
 type Category = { title: string; results: Result[] };
 
-const SENIOR: Category[] = [
+const getSeniorCategories = (isEn: boolean): Category[] => [
   {
-    title: 'O-1: Pojazdy cywilne europejskie',
+    title: isEn
+      ? 'O-1: European civilian vehicles'
+      : 'O-1: Pojazdy cywilne europejskie',
     results: [
       { name: 'Piotr Chyziak', model: 'Ferrari SP2', city: 'Warszawa', country: 'PL' },
       { name: 'Arek Krzysiak', model: 'Ferrari 328 GTB', city: 'Nowy Dwór Mazowiecki', country: 'PL' },
@@ -15,7 +21,9 @@ const SENIOR: Category[] = [
     ]
   },
   {
-    title: 'O-2: Pojazdy cywilne amerykańskie',
+    title: isEn
+      ? 'O-2: American civilian vehicles'
+      : 'O-2: Pojazdy cywilne amerykańskie',
     results: [
       { name: 'Marcin Trojanowski', model: 'Ford Mustang GT4', city: 'Warszawa', country: 'PL' },
       { name: 'Arek Krzysiak', model: '1968 Chevrolet El Camino SS', city: 'Nowy Dwór Mazowiecki', country: 'PL' },
@@ -23,7 +31,9 @@ const SENIOR: Category[] = [
     ]
   },
   {
-    title: 'O-3: Pojazdy cywilne azjatyckie',
+    title: isEn
+      ? 'O-3: Asian civilian vehicles'
+      : 'O-3: Pojazdy cywilne azjatyckie',
     results: [
       { name: 'Sławek Radek', model: 'Toyota Supra mk5', city: 'Klucze', country: 'PL' },
       { name: 'Łukasz Hajnrych', model: 'Honda Civic Mugen RR', city: 'Sieradz', country: 'PL' },
@@ -35,7 +45,9 @@ const SENIOR: Category[] = [
     ]
   },
   {
-    title: 'O-4: Pojazdy motorsportowe rajdowe itp.',
+    title: isEn
+      ? 'O-4: Motorsport vehicles, rally etc.'
+      : 'O-4: Pojazdy motorsportowe rajdowe itp.',
     results: [
       { name: 'Hubert Pawlikowski', model: 'Honda RA272', city: 'Warszawa', country: 'PL' },
       { name: 'Tomasz Zamiara', model: 'McLaren MP4/6', city: 'Witkowo', country: 'PL' },
@@ -53,7 +65,7 @@ const SENIOR: Category[] = [
     ]
   },
   {
-    title: 'O-5: Motocykle',
+    title: isEn ? 'O-5: Motorcycles' : 'O-5: Motocykle',
     results: [
       { name: 'Sławomir Grębowiec', model: 'Honda RC213V', city: 'Tarnobrzeg', country: 'PL' },
       { name: 'Wojciech Bryński', model: 'BMW HP4 RACE', city: 'Bytom', country: 'PL' },
@@ -61,7 +73,7 @@ const SENIOR: Category[] = [
     ]
   },
   {
-    title: 'O-6: Pojazdy ciężarowe',
+    title: isEn ? 'O-6: Trucks' : 'O-6: Pojazdy ciężarowe',
     results: [
       { name: 'Jiří Hübner', model: 'Mack AC', city: 'Modelkit Kladno', country: 'CZE' },
       { name: 'Marcin Durman', model: 'Bedford OSBT', city: 'Biskupice', country: 'PL' },
@@ -69,7 +81,7 @@ const SENIOR: Category[] = [
     ]
   },
   {
-    title: 'O-7: Złomki, Rat Style',
+    title: isEn ? 'O-7: Wrecks, Rat Style' : 'O-7: Złomki, Rat Style',
     results: [
       { name: 'Łukasz Jarosiński', model: 'Mercedes Benz 170 V Lieferwagen', city: 'Częstochowa', country: 'PL' },
       { name: 'Wojciech Bryński', model: 'Fiat 595 Abarth "Rust style"', city: 'Bytom', country: 'PL' },
@@ -78,14 +90,16 @@ const SENIOR: Category[] = [
     ]
   },
   {
-    title: 'O-8: Pojazdy specjalne, dźwigi, techniczne, rolnicze i służb',
+    title: isEn
+      ? 'O-8: Special, crane, technical, agricultural & emergency vehicles'
+      : 'O-8: Pojazdy specjalne, dźwigi, techniczne, rolnicze i służb',
     results: [
       { name: 'Sławomir Grębowiec', model: 'Man Tgm', city: 'Tarnobrzeg', country: 'PL' },
       { name: 'Mateusz Lasek', model: 'Bizon Z056', city: 'Niepołomice', country: 'PL' }
     ]
   },
   {
-    title: 'O-9: Pojazdy filmowe',
+    title: isEn ? 'O-9: Movie vehicles' : 'O-9: Pojazdy filmowe',
     results: [
       { name: 'Arek Krzysiak', model: 'De Lorean Back To The Future', city: 'Nowy Dwór Mazowiecki', country: 'PL' },
       { name: 'Mirosław Matuszak', model: 'VW Beetle "Herbie"', city: 'Poznań', country: 'PL' },
@@ -93,7 +107,7 @@ const SENIOR: Category[] = [
     ]
   },
   {
-    title: 'O-10: Pojazdy terenowe',
+    title: isEn ? 'O-10: Off-road vehicles' : 'O-10: Pojazdy terenowe',
     results: [
       { name: 'Piotr Szweda', model: 'Toyota Hilux', city: 'Czechowice-Dziedzice', country: 'PL' },
       { name: 'Jiří Hübner', model: 'Jeep', city: 'Modelkit Kladno', country: 'CZE' },
@@ -101,7 +115,7 @@ const SENIOR: Category[] = [
     ]
   },
   {
-    title: 'O-11: Pojazdy vintage',
+    title: isEn ? 'O-11: Vintage vehicles' : 'O-11: Pojazdy vintage',
     results: [
       { name: 'Marcin Trojanowski', model: 'Mercedes 300 SL Speedster', city: 'Warszawa', country: 'PL' },
       { name: 'Bartłomiej Podwysocki', model: 'Alfa Romeo GTA', city: 'Łódź', country: 'PL' },
@@ -109,7 +123,9 @@ const SENIOR: Category[] = [
     ]
   },
   {
-    title: 'O-12: Pojazdy tuningowe i modyfikowane',
+    title: isEn
+      ? 'O-12: Tuned and modified vehicles'
+      : 'O-12: Pojazdy tuningowe i modyfikowane',
     results: [
       { name: 'Sławek Radek', model: 'ToyoTank', city: 'Klucze', country: 'PL' },
       { name: 'Łukasz Hajnrych', model: 'Mazda RX-7 VeilSide D1-GT', city: 'Sieradz', country: 'PL' },
@@ -117,13 +133,15 @@ const SENIOR: Category[] = [
     ]
   },
   {
-    title: 'O-13: Dioramy, warsztaty, garaże',
+    title: isEn ? 'O-13: Dioramas, workshops, garages' : 'O-13: Dioramy, warsztaty, garaże',
     results: [
       { name: 'Marcin Trojanowski', model: 'Mercedes 300 SL', city: 'Warszawa', country: 'PL' }
     ]
   },
   {
-    title: 'O-15: Kategoria Specjalna „Złoty Rycerzyk"',
+    title: isEn
+      ? 'O-15: Special Category "Golden Knight"'
+      : 'O-15: Kategoria Specjalna „Złoty Rycerzyk"',
     results: [
       { name: 'Sławomir Mulka', model: 'Toyota Celica ST185', city: 'IPMS Świdnica', country: 'PL' }
     ]
@@ -139,16 +157,24 @@ const JUNIOR: { name: string; country: string }[] = [
 ];
 
 export default function Wyniki() {
+  const locale = useLocale();
+  const isEn = locale === 'en';
+  const seniorCategories = getSeniorCategories(isEn);
+
   return (
     <main className="bg-base-100 text-base-content py-16 px-6 md:px-12">
       <section className="max-w-4xl mx-auto">
         <h1 className="text-3xl md:text-4xl font-bold text-primary border-b-2 border-primary pb-2 mb-8">
-          Wyniki – II Meeting Modelarski Ogrodzieniec 2026
+          {isEn
+            ? 'Results – 2nd Modeling Meeting Ogrodzieniec 2026'
+            : 'Wyniki – II Meeting Modelarski Ogrodzieniec 2026'}
         </h1>
 
-        <h2 className="text-2xl font-bold mb-6">SENIOR – wyróżnienia</h2>
+        <h2 className="text-2xl font-bold mb-6">
+          {isEn ? 'SENIOR – awards' : 'SENIOR – wyróżnienia'}
+        </h2>
 
-        {SENIOR.map((cat) => (
+        {seniorCategories.map((cat) => (
           <div key={cat.title} className="mb-8">
             <h3 className="text-lg font-semibold text-primary mb-2 border-l-4 border-primary pl-3">
               {cat.title}
@@ -157,10 +183,10 @@ export default function Wyniki() {
               <table className="table table-sm w-full">
                 <thead>
                   <tr>
-                    <th>Imię i nazwisko</th>
-                    <th>Model</th>
-                    <th>Miasto</th>
-                    <th>Kraj</th>
+                    <th>{isEn ? 'Name' : 'Imię i nazwisko'}</th>
+                    <th>{isEn ? 'Model' : 'Model'}</th>
+                    <th>{isEn ? 'City' : 'Miasto'}</th>
+                    <th>{isEn ? 'Country' : 'Kraj'}</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -180,13 +206,15 @@ export default function Wyniki() {
 
         <div className="divider divider-neutral opacity-50 my-8"></div>
 
-        <h2 className="text-2xl font-bold mb-6">JUNIOR – wyróżnienia</h2>
+        <h2 className="text-2xl font-bold mb-6">
+          {isEn ? 'JUNIOR – awards' : 'JUNIOR – wyróżnienia'}
+        </h2>
         <div className="overflow-x-auto">
           <table className="table table-sm w-full max-w-sm">
             <thead>
               <tr>
-                <th>Imię i nazwisko</th>
-                <th>Kraj</th>
+                <th>{isEn ? 'Name' : 'Imię i nazwisko'}</th>
+                <th>{isEn ? 'Country' : 'Kraj'}</th>
               </tr>
             </thead>
             <tbody>

@@ -1,0 +1,422 @@
+{
+  "4baa29074c36829b": "404",
+  "c0bb0de795334a15": "Nie mogliśmy znaleźć strony, której szukasz",
+  "41237c9374db7ffd": "Strona mogła zostać usunięta lub nigdy nie istniała.",
+  "3c6e3d0fb28d8647": "Wróć na stronę główną",
+  "f596168933499343": "Do rozpoczęcia konkursu pozostało:",
+  "1de5a8f7ce1a751e": [
+    {
+      "t": "p",
+      "i": 1,
+      "c": "Nasza inicjatywa narodziła się z autentycznej pasji do motoryzacji w skali mikro. Wszystko zaczęło się w 2025 roku – to wtedy zorganizowaliśmy pierwszą edycję, która miała formę uroczystej wystawy połączonej ze zlotem klasyków w skali 1:1. Już wtedy pod murami ogrodzienieckiego zamku pojawili się modelarze z najdalszych zakątków Polski, by wesprzeć nasz start."
+    },
+    {
+      "t": "p",
+      "i": 2,
+      "c": "Sukces inauguracyjnej wystawy dał nam jasny sygnał: czas wrzucić wyższy bieg. W 2026 roku odbyła się pierwsza pełnoprawna edycja konkursowa, która przyciągnęła twórców specjalizujących się w idealnym odwzorowaniu rzeczywistości. Nasz konkurs od początku stawia na modele redukcyjne z plastiku i materiałów pokrewnych, dbając o najwyższy poziom detali."
+    },
+    {
+      "t": "p",
+      "i": 3,
+      "c": "Druga edycja Meetingu to wydarzenie otwarte dla wszystkich, nie tylko dla profesjonalistów. Przygotowaliśmy bogaty program towarzyszący:"
+    },
+    {
+      "t": "ul",
+      "i": 4,
+      "c": [
+        {
+          "t": "li",
+          "i": 5,
+          "c": [
+            {
+              "t": "strong",
+              "i": 6,
+              "c": "Giełda Modelarska:"
+            },
+            " Raj dla kolekcjonerów i hobbystów. To tutaj znajdziesz rzadkie zestawy, specjalistyczne narzędzia, farby oraz akcesoria, które pozwolą Ci zacząć przygodę z tym hobby."
+          ]
+        },
+        {
+          "t": "li",
+          "i": 7,
+          "c": [
+            {
+              "t": "strong",
+              "i": 8,
+              "c": "Warsztaty dla Dzieci i Młodzieży:"
+            },
+            " Pod okiem doświadczonych instruktorów najmłodsi mogli spróbować swoich sił w montażu pierwszych miniaturowych konstrukcji. To świetna okazja, by „złapać bakcyla\" i rozwinąć zdolności manualne oraz cierpliwość."
+          ]
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "i": 9,
+      "c": "Obecnie przygotowujemy trzecią edycję Meetingu – to nie tylko kontynuacja tradycji, ale przede wszystkim rozwój. Rozszerzamy formułę o nowe kategorie i nagrody specjalne, by uczynić ją jeszcze bardziej atrakcyjną zarówno dla doświadczonych modelarzy, jak i zwiedzających."
+    },
+    {
+      "t": "p",
+      "i": 10,
+      "c": [
+        {
+          "t": "strong",
+          "i": 11,
+          "c": "Nasza misja:"
+        },
+        " W Ogrodzieńcu pasja spotyka się z kunsztem. To tutaj lśniący lakier, precyzyjne detale i wspólna idea modelarstwa łączą ludzi z całej Polski w cieniu jurajskich skał."
+      ]
+    }
+  ],
+  "b0e21b0a3150e759": "Nasi Sponsorzy:",
+  "2794cc72f63df043": "Patroni Medialni:",
+  "235f3abcbaaa07e9": "godz.",
+  "69e79cf2d3b60b61": "min",
+  "682f8e026a4e1bf0": "sek",
+  "13c5b3a5c45e34a8": "gm.scalemasters@gmail.com",
+  "fff4348d8e3f99b7": "Scale Masters",
+  "4f1b564bd6ac813a": "✕",
+  "059da9197c25a097": "❮",
+  "70f778f088a96acc": "❯",
+  "0965b14610d4625e": "close",
+  "ffbc9fd046cf0353": "III Meeting Modelarski Pojazdów Cywilnych",
+  "971b6bf0a4163285": "Scale Masters – Ogrodzieniec",
+  "751f39145b742d25": "Coroczne spotkanie modelarzy skupione na redukcyjnych modelach pojazdów cywilnych. Wystawy, konkursy i warsztaty pod murami jurajskiego zamku w Ogrodzieńcu.",
+  "68026cc58db3e782": "Polski",
+  "8d9f46ffbd4bd294": "PL",
+  "b536a564e40ec3c4": "English",
+  "6321c4c668e90608": "EN",
+  "f876b82affb0370a": "Rybnicki Festiwal Modelarski HOYM MODEL FEST",
+  "798952e8f6fb6ffb": "I Meeting Modelarski – Ogrodzieniec 2025",
+  "98498d6ab803e9d7": "II Meeting Modelarski – Ogrodzieniec 2026",
+  "adb408e3fe7236c1": "Ogólnopolski Konkurs Modeli Redukcyjnych Strzelec 2026",
+  "5fa565155bac6ccd": "Program wydarzenia",
+  "37bc5b5e9ab3b74e": "2 kwietnia 2027 r. (piątek)",
+  "8882fac13691f482": "17:00–19:00",
+  "e7bdf02b3758b560": "– przyjmowanie modeli",
+  "e30b4f2f5cd3ba4d": "3 kwietnia 2027 r. (sobota)",
+  "0844304e70a9df37": "08:00–10:30",
+  "34e536645291f738": "10:00",
+  "cf766210d10fcbf3": "– oficjalne otwarcie wystawy",
+  "fe7cb8e04e2bc441": "10:00–15:00",
+  "d892b788c5be211e": "– warsztaty modelarskie dla dzieci",
+  "b3e4b9f00c13c3a1": "10:00–16:00",
+  "055d46b50ae3033c": "– zwiedzanie ekspozycji, giełda modelarska",
+  "45f716c3e1487bd6": "10:30–14:00",
+  "c89e07ab86189779": "– praca komisji sędziowskich",
+  "c6eb0901da022573": "15:30–16:00",
+  "4a3b7feec6d6bc22": "– odbiór modeli",
+  "795e6c729f618215": "16:00",
+  "074bdcba5d81449f": "– ogłoszenie wyników konkursu i wręczenie nagród",
+  "1614c63587d24d24": "Organizator zastrzega możliwość zmian w programie z odpowiednim wyprzedzeniem za pośrednictwem strony internetowej i mediów społecznościowych.",
+  "2fda0b89df33d217": [
+    {
+      "i": 1,
+      "k": "_gt_value_1",
+      "v": "v"
+    },
+    ":"
+  ],
+  "e793069ecbc3c670": "Konkurs oraz Wystawa Modelarska",
+  "239e33e6259f0a16": "REGULAMIN",
+  "4102286253764b1c": "III Meeting Modelarski Pojazdów Cywilnych – Ogrodzieniec 2027",
+  "a48185e34f9bb0d5": [
+    {
+      "t": "span",
+      "i": 1,
+      "c": "I."
+    },
+    " Informacje ogólne (cel wystawy i konkursu)"
+  ],
+  "c4af2fd031965478": "1. Cel wydarzenia",
+  "7abd1f8027eefac3": "Celem wystawy i konkursu jest popularyzacja modelarstwa redukcyjnego, ze szczególnym uwzględnieniem pojazdów cywilnych, jako wartościowej formy rozwijania zainteresowań technicznych, historycznych i kreatywnych. Wydarzenie promuje modelarstwo jako ciekawą formę spędzania wolnego czasu, integrującą miłośników modelarstwa z różnych środowisk i pokoleń.",
+  "cc6f35862761e578": [
+    {
+      "t": "span",
+      "i": 1,
+      "c": "II."
+    },
+    " Termin, miejsce oraz program wydarzenia"
+  ],
+  "8dd874206b60ad14": "1. Miejsce wydarzenia",
+  "591818d89f6a11e4": "Miejsko-Gminny Ośrodek Kultury i Sportu w Ogrodzieńcu",
+  "1bcf2e6257a0db20": "2. Termin",
+  "85334799392a5c81": "3 kwietnia 2027 r.",
+  "bf1f5c9906cf80a9": "3. Program wydarzenia",
+  "90689cc55b2ff7cd": [
+    {
+      "t": "span",
+      "i": 1,
+      "c": "17:00–19:00"
+    },
+    " – przyjmowanie modeli"
+  ],
+  "d786f002ea853939": [
+    {
+      "t": "span",
+      "i": 1,
+      "c": "08:00–10:30"
+    },
+    " – przyjmowanie modeli"
+  ],
+  "b91ba12b8683b9de": [
+    {
+      "t": "span",
+      "i": 1,
+      "c": "10:00"
+    },
+    " – oficjalne otwarcie wystawy"
+  ],
+  "9fd14162a30db0ea": [
+    {
+      "t": "span",
+      "i": 1,
+      "c": "10:00–15:00"
+    },
+    " – warsztaty modelarskie dla dzieci"
+  ],
+  "a1b06ab925c3ede4": [
+    {
+      "t": "span",
+      "i": 1,
+      "c": "10:00–16:00"
+    },
+    " – zwiedzanie ekspozycji, giełda modelarska"
+  ],
+  "a2f281ad4740b4a4": [
+    {
+      "t": "span",
+      "i": 1,
+      "c": "10:30–14:00"
+    },
+    " – praca komisji sędziowskich"
+  ],
+  "7282fd95058c3c06": [
+    {
+      "t": "span",
+      "i": 1,
+      "c": "15:30–16:00"
+    },
+    " – odbiór modeli"
+  ],
+  "470f984ca0dbf50e": [
+    {
+      "t": "span",
+      "i": 1,
+      "c": "16:00"
+    },
+    " – ogłoszenie wyników konkursu i wręczenie nagród"
+  ],
+  "3649d77cac9e25d3": [
+    {
+      "t": "span",
+      "i": 1,
+      "c": "III."
+    },
+    " Organizator"
+  ],
+  "c03a1786846bdb09": "Grupa Modelarska Scale Masters, Urząd Miasta i Gminy w Ogrodzieńcu, Miejsko-Gminny Ośrodek Kultury i Sportu w Ogrodzieńcu",
+  "4dffc3cd0e47cde7": [
+    {
+      "t": "span",
+      "i": 1,
+      "c": "IV."
+    },
+    " Regulamin konkursu"
+  ],
+  "501055706229926b": "1. Zasady ogólne",
+  "5bb2838a0e2d4285": "Konkurs ma charakter otwarty – mogą w nim uczestniczyć wszystkie osoby, które samodzielnie wykonały zgłaszany model.",
+  "4fce3e537e6bc37e": "Kategorie wiekowe uczestników:",
+  "3b9da72d8c101910": [
+    {
+      "t": "span",
+      "i": 1,
+      "c": "Młodzik"
+    },
+    " – 0-12 lat"
+  ],
+  "11ddbf1b944a5fea": [
+    {
+      "t": "span",
+      "i": 1,
+      "c": "Junior"
+    },
+    " – 13-17 lat"
+  ],
+  "9e52d790226377b3": [
+    {
+      "t": "span",
+      "i": 1,
+      "c": "Senior"
+    },
+    " – 18 i więcej lat"
+  ],
+  "4d793f95c4f4a986": "Nagrody, które nie zostaną odebrane w trakcie trwania wydarzenia, nie będą wysyłane do uczestników w późniejszym terminie.",
+  "6bdb96847f472643": "Zasady uczestnictwa:",
+  "c55c5b869306919b": "Uczestnik może zgłosić maksymalnie 6 modeli w każdej kategorii konkursowej.",
+  "b5e2aeb3a0f163b0": "W danej kategorii konkursowej uczestnik może otrzymać miejsce lub wyróżnienie od komisji sędziowskiej tylko za jeden model (nie dotyczy nagród od sponsorów lub partnerów, którzy sami wybierają model do nagrody).",
+  "7b54828c0e175cd9": "W przypadku wątpliwości co do autorstwa modelu, organizatorzy zastrzegają sobie prawo do przeprowadzenia rozmowy weryfikacyjnej z uczestnikiem.",
+  "53f43e1dd1844f18": "Organizatorzy nie zapewniają ubezpieczenia modeli, uczestników ani osób odwiedzających wydarzenie.",
+  "d7a5f3a649380fad": "Każdy model musi być oznaczony kartą konkursową udostępnioną przez organizatora; jej brak skutkuje dyskwalifikacją modelu.",
+  "c4a207394ace711e": [
+    "Modele, które zostały wyróżnione w poprzednich edycjach Meetingu Modelarskiego w Ogrodzieńcu, nie mogą brać udziału w regularnych kategoriach konkursowych. Mogą zostać zgłoszone wyłącznie do kategorii specjalnej",
+    " ",
+    {
+      "t": "strong",
+      "i": 1,
+      "c": "O-25 Pojazdy wyróżnione w poprzedniej edycji „Laureat”"
+    },
+    " ",
+    "lub zostać zaprezentowane jako wystawa pozakonkursowa."
+  ],
+  "ee7a77b282e857ef": "2. Wykluczenia i ekspozycja pozakonkursowa",
+  "be039f9ae5a2571c": "Członkowie komisji sędziowskiej oraz główni organizatorzy (Grupa Scale Masters) nie mogą brać udziału w konkursie głównym ani kategoriach specjalnych jako uczestnicy.",
+  "cff8f5d02852f85d": "Organizatorzy oraz sędziowie mają prawo do zaprezentowania swoich prac wyłącznie w formie Wystawy Pozakonkursowej (Pokazowej).",
+  "581b4c696288763a": "Karty startowe modeli sędziów i organizatorów zostaną wyraźnie oznaczone innym kolorem (np. niebieskim).",
+  "8e2d94173c3752bb": "Modele pozakonkursowe mogą otrzymywać wyłącznie nagrody specjalne i wyróżnienia fundowane przez zewnętrznych sponsorów, partnerów lub inne kluby modelarskie.",
+  "c6a72b44f05d5f8d": "3. Rejestracja modeli",
+  "04e170735b9bfa23": [
+    "Modele należy rejestrować wyłącznie online za pośrednictwem formularza na stronie:",
+    " ",
+    {
+      "t": "a",
+      "i": 1,
+      "c": "www.meeting-ogrodzieniec.pl"
+    }
+  ],
+  "4dc1cba71737f0c5": "Rejestracja trwa do 30 marca 2027 r. do godziny 23:59.",
+  "37f324f77db1c394": "Brak możliwości rejestracji w trakcie trwania wydarzenia.",
+  "0025b8478fb33d1c": [
+    "Opłata startowa wynosi ",
+    {
+      "t": "strong",
+      "i": 1,
+      "c": "20 PLN"
+    },
+    " lub",
+    " ",
+    {
+      "t": "strong",
+      "i": 2,
+      "c": "5 EURO"
+    },
+    " od uczestnika (dotyczy tylko seniorów), niezależnie od liczby zgłoszonych modeli. Juniorzy i młodzicy startują bez opłat."
+  ],
+  "41dfcb3db8e6ea6b": "4. Kategorie konkursowe",
+  "4d93a60e1e002fd7": "Kategorie O-1 do O-25 przeznaczone są wyłącznie dla kategorii wiekowej Senior. Młodzicy i Juniorzy zgłaszają swoje modele zależnie od materiału: plastik/karton do dedykowanej kategorii od O-26 do O-28.",
+  "eeb644163acdbee4": "Organizator ma prawo do łączenia kategorii w przypadku niewielkiej ilości modeli w danej kategorii.",
+  "ecb8ca13ab59cc6d": "5. Ocena modeli",
+  "13e0cedef926662c": "Komisja sędziowska ocenia modele według zasady „podoba się / nie podoba się”, uwzględniając następujące kryteria:",
+  "ab6a8454afc12ee4": "staranność wykonania,",
+  "9094deb509c99411": "realizm wykonania,",
+  "e866904a994a3808": "estetykę malowania i oznaczeń,",
+  "51ec90e0f59ee309": "stopień trudności oraz zakres pracy własnej włożonej w wykonanie modelu.",
+  "cd86647c28da18f9": "Komisję sędziowską tworzą doświadczeni, profesjonalni modelarze, co gwarantuje pełne bezpieczeństwo modeli oraz znajomość procedur obchodzenia się z nimi. Sędziowie są uprawnieni do przestawiania modeli na stołach wystawowych. Sędziowie oceniają modele bez ich dotykania jeżeli nie stoją przymocowane do podstawki. W wyjątkowych wypadkach, za zgodą lub w obecności autora, model może zostać podniesiony w celu weryfikacji podwozia.",
+  "1e2cad4c19b4c9e5": "Uczestnik ma możliwość dołączenia dokumentacji fotograficznej przedstawiającej proces budowy oraz ewentualną waloryzację modelu.",
+  "2717d2bb0f69dcf0": [
+    {
+      "t": "span",
+      "i": 1,
+      "c": "Uwaga:"
+    },
+    " W przypadku, gdy waloryzacja dotyczy elementów niewidocznych po złożeniu modelu (np. wnętrza), uczestnik pragnący zwrócić uwagę jury na takie modyfikacje, powinien załączyć dokumentację fotograficzną z etapu budowy tych elementów."
+  ],
+  "a83af309c5fb7b52": "Wszelkie decyzje komisji sędziowskiej są ostateczne i nie podlegają zaskarżeniu.",
+  "68732210ca8e99b4": "6. Nagrody",
+  "15201ce9ad7d198c": "W każdej kategorii zostaną przyznane miejsca 1, 2, 3 oraz maksymalnie dwa wyróżnienia. Jeżeli w danej kategorii wystawiona jest niewielka liczba modeli lub bierze w niej udział 3 lub mniej modelarzy, komisja sędziowska ma prawo przyznać mniejszą liczbę nagród (lub nie przyznawać ich wcale). W kategorii „Złoty Rycerzyk” warunkiem przyznania nagrody jest udział minimum 3 modelarzy.",
+  "48f3d5a0521424b7": "Kategoria O-25 Pojazdy wyróżnione w poprzedniej edycji „Laureat”:",
+  "2270da457b63362b": [
+    "Gromadzi modele nagrodzone w poprzednich latach w Ogrodzieńcu. Wszyscy Sędziowie spośród nich wybierają jeden, absolutnie najlepszy model wystawy, który otrzymuje tytuł",
+    " ",
+    {
+      "t": "span",
+      "i": 1,
+      "c": "Champion of Champions"
+    }
+  ],
+  "00ca08a5792eab0e": [
+    {
+      "t": "span",
+      "i": 1,
+      "c": "Uwaga:"
+    },
+    " Modele nagrodzone/wyróżnione przez Organizatora zostaną oznaczone odpowiednią pieczątką na karcie startowej podczas pracy komisji."
+  ],
+  "d6ded182073014fc": "Organizator, a także partnerzy i sponsorzy wydarzenia, zastrzegają sobie prawo do przyznania nagród specjalnych według własnego uznania. Wręczenie tych nagród nastąpi podczas oficjalnego zakończenia konkursu.",
+  "adb3d0edbb43a90c": "KATEGORIA SPECJALNA O-24",
+  "0d901c3945325a5f": "Złoty Rycerzyk",
+  "4b085ed580f37dac": "Kategoria Specjalna obejmuje motocykle wyścigowe i jest dedykowana replikom jednośladów, których przeznaczeniem jest rywalizacja na torach i trasach całego świata.",
+  "f55c0d6e21153396": "Kategoria obejmuje modele motocykli wyścigowych bez względu na skalę i stopień waloryzacji.",
+  "c147300c8ee43b5e": "Do kategorii kwalifikują się m.in.:",
+  "09bd57abd7f86505": "Motocykle z serii MotoGP, 500 cm³, Moto2, Moto3.",
+  "a65c5b79bbb3039d": "Maszyny z serii Superbike (WSBK) i Endurance.",
+  "adbbdf408d4e7b44": "Legendarnie motocykle z wyścigów drogowych (np. Isle of Man TT).",
+  "8c675b045720b4bb": "Historyczne i współczesne motocykle crossowe, enduro oraz rajdowe (np. Rajd Dakar).",
+  "497c3c2fa453fc07": [
+    {
+      "t": "span",
+      "i": 1,
+      "c": "Uwaga:"
+    },
+    " Modele motocykli seryjnych/szosowych bez wyraźnych modyfikacji wyścigowych nie będą klasyfikowane w tej kategorii."
+  ],
+  "253b2e1ff4ce9773": "Każdy uczestnik może zgłosić do tej kategorii maksymalnie dwa modele. Model zgłoszony w kategorii specjalnej nie uczestniczy w konkursie ogólnym.",
+  "79366d61ae495275": "Oceny modeli dokonuje administracja Grupy Modelarskiej Scale Masters.",
+  "1edc1cce0bd51737": [
+    {
+      "t": "span",
+      "i": 1,
+      "c": "V."
+    },
+    " Regulamin porządkowy"
+  ],
+  "9b58e770dd3b10d9": "Zwiedzający i uczestnicy zobowiązani są do przestrzegania ogólnych zasad bezpieczeństwa obowiązujących na terenie wystawy.",
+  "97283fd40fcfb119": "Zabronione jest dotykanie modeli, opieranie się o stoły oraz inne czynności mogące skutkować ich uszkodzeniem.",
+  "fdc9667b02b997e8": "Dzieci powinny uczestniczyć w wydarzeniu wyłącznie pod opieką osoby dorosłej.",
+  "ff4871ac6709a0e8": "Organizator nie ponosi odpowiedzialności za rzeczy pozostawione bez nadzoru.",
+  "5e0a18ce1d312f19": "Organizator ma prawo do odmowy wstępu osobom:",
+  "48ad09273c46acdf": "pod wpływem alkoholu lub środków odurzających",
+  "1ddfce46872fed2e": "zachowującym się agresywnie",
+  "759204d0bbd8fe79": "naruszającym regulamin imprezy",
+  "bb28ca61b78a37fd": [
+    {
+      "t": "span",
+      "i": 1,
+      "c": "VI."
+    },
+    " Ochrona danych osobowych"
+  ],
+  "27a8e8bd4bc84134": "Dane uczestników są przetwarzane wyłącznie na potrzeby organizacji konkursu zgodnie z RODO.",
+  "dd2df65234c80817": "Podanie danych osobowych jest dobrowolne, ale niezbędne do udziału w wydarzeniu.",
+  "4bda6ae912e69313": "W związku z przetwarzaniem Państwa danych osobowych informujemy, że:",
+  "7afac266ac7efbd5": "Administratorem danych osobowych jest Grupa Modelarska Scale Masters.",
+  "a9b256e73402e323": "Państwa dane osobowe są przetwarzane w celach przeprowadzenia, rozstrzygnięcia i rozliczenia III Meetingu Modelarskiego Pojazdów Cywilnych Ogrodzieniec 2027.",
+  "a2a335c842b3514d": "Państwa dane osobowe przetwarzamy na podstawie wyrażonej przez Państwa zgody, w związku z wypełnieniem obowiązku prawnego ciążącego na administratorze danych, w tym archiwizacji.",
+  "ecc7909d78dc75c0": "Udział w Festiwalu jest dobrowolny, natomiast niepodanie danych skutkuje brakiem możliwości realizacji celów, dla których są gromadzone.",
+  "e0b65c1e05221645": "Przysługuje Państwu prawo do usunięcia danych osobowych.",
+  "113d7a378b94c674": "Przysługuje Państwu prawo do cofnięcia zgody na przetwarzanie danych osobowych.",
+  "8318c6622cf64447": "Przysługuje Państwu prawo do dostępu do danych osobowych, ich sprostowania lub ograniczenia przetwarzania.",
+  "75db026784ae01ee": "Przysługuje Państwu prawo do wniesienia skargi do organu nadzorczego tj. Prezesa Urzędu Ochrony Danych Osobowych.",
+  "a2a75eec888b7cf8": "Nie przysługuje Państwu prawo do przenoszenia danych osobowych, ponieważ dane nie będą przetwarzane w sposób zautomatyzowany.",
+  "56b90b4fff5ca6b4": "Państwa dane osobowe nie będą podlegały zautomatyzowanemu podejmowaniu decyzji oraz nie będą podlegały profilowaniu.",
+  "b2dd817388ce66ae": "Podane dane osobowe nie będą udostępniane innym podmiotom niż uprawnionym na podstawie nadrzędnych przepisów prawa oraz mogą być udostępnione tylko tym podmiotom, z którymi Administrator Danych zawarł umowę powierzenia przetwarzania danych osobowych zgodnie z art. 28 Rozporządzenia UE.",
+  "06501fa94ecdca13": "W przypadku uzyskania tytułu laureata Państwa dane osobowe w zakresie: imię, nazwisko, wizerunek, mogą być podane do publicznej wiadomości.",
+  "16192b08fbf8a4e8": [
+    {
+      "t": "span",
+      "i": 1,
+      "c": "VII."
+    },
+    " Zgoda na wykorzystanie wizerunku i akceptacja Regulaminu"
+  ],
+  "91f5ed8c347acb72": "Zgłoszenie do konkursu jest jednoznaczne z wyrażeniem zgody na utrwalenie, przetwarzanie i rozpowszechnianie wizerunku uczestnika oraz jego prac we wskazanym zakresie działania i promocji, w tym na publiczne odtwarzanie powstałego w trakcie realizacji działań i promocji materiału foto, audio lub video, zawierającego wizerunek uczestnika i jego prac w celach promocyjnych.",
+  "8b31326d7e693199": "Zgłoszenie modelu do konkursu jest równoznaczne z akceptacją niniejszego regulaminu.",
+  "f9df84636867ae4d": "Organizator nie jest zobowiązany do zapewnienia uczestnikom noclegu, wyżywienia ani pokrycia kosztów dojazdu na konkurs.",
+  "303f16e4aa08b45f": "•",
+  "42447a44b1cfa057": "Wyniki konkursu",
+  "af0a36b96fef0e6a": "GT Cup Europe",
+  "5ad489dde1707877": "GT Cup Polska",
+  "71ece78d346d0f82": "Noclegi",
+  "94a355563e2a1b9b": "Poniżej znajdziesz wybrane miejsca noclegowe w Ogrodzieńcu i okolicy. Kliknij nazwę obiektu, aby zobaczyć szczegóły i opinie w mapach Google.",
+  "96cfa4a72c6c2746": "▸"
+}

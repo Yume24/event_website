@@ -1,83 +1,123 @@
-const grupy = [
+'use client';
+
+import { useLocale } from 'gt-next';
+
+const getTourismGroups = (isEn: boolean) => [
   {
-    title: 'Atrakcje w Podzamczu (przy samym Ogrodzieńcu)',
+    title: isEn
+      ? 'Attractions in Podzamcze (right next to Ogrodzieniec)'
+      : 'Atrakcje w Podzamczu (przy samym Ogrodzieńcu)',
     atrakcje: [
       {
-        name: 'Zamek Ogrodzieniec',
+        name: isEn ? 'Ogrodzieniec Castle' : 'Zamek Ogrodzieniec',
         href: 'https://maps.google.com/?cid=14418201119339341711',
-        desc: 'Największa i najbardziej rozpoznawalna warownia na Szlaku Orlich Gniazd. Imponujące, doskonale zachowane ruiny wkomponowane w wapienne ostańce. Zamek zyskał dodatkową sławę jako plan filmowy m.in. dla serialu „Wiedźmin” od Netflixa oraz „Zemsty” Andrzeja Wajdy.'
+        desc: isEn
+          ? 'The largest and most recognized stronghold on the Trail of the Eagles\' Nests. Impressive, beautifully preserved ruins built into limestone rocks. The castle was also used as a film set for Netflix\'s "The Witcher" and Andrzej Wajda\'s "The Revenge".'
+          : 'Największa i najbardziej rozpoznawalna warownia na Szlaku Orlich Gniazd. Imponujące, doskonale zachowane ruiny wkomponowane w wapienne ostańce. Zamek zyskał dodatkową sławę jako plan filmowy m.in. dla serialu „Wiedźmin” od Netflixa oraz „Zemsty” Andrzeja Wajdy.'
       },
       {
-        name: 'Park Ogrodzieniec',
+        name: isEn ? 'Ogrodzieniec Park' : 'Park Ogrodzieniec',
         href: 'https://maps.google.com/?cid=1502826854785044845',
-        desc: 'Kompleks rozrywkowy zlokalizowany tuż obok zamku. Znajdziesz tam m.in. Park Miniatur (rekonstrukcje zamków jurajskich w skali 1:25), Tor Saneczkowy, Dom Legend i Strachów oraz Park Doświadczeń Fizycznych. Świetne miejsce dla rodzin z dziećmi.'
+        desc: isEn
+          ? 'Entertainment complex located right next to the castle. Features Miniature Park (1:25 scale reconstructions of Jura castles), Toboggan Track, House of Legends and Fears, and Physics Experience Park. Great for families.'
+          : 'Kompleks rozrywkowy zlokalizowany tuż obok zamku. Znajdziesz tam m.in. Park Miniatur (rekonstrukcje zamków jurajskich w skali 1:25), Tor Saneczkowy, Dom Legend i Strachów oraz Park Doświadczeń Fizycznych. Świetne miejsce dla rodzin z dziećmi.'
       },
       {
-        name: 'Gród na Górze Birów',
+        name: isEn ? 'Birów Mountain Stronghold' : 'Gród na Górze Birów',
         href: 'https://maps.google.com/?cid=2676570054435686747',
-        desc: 'Zrekonstruowana, drewniana osada królewska stylizowana na średniowieczne grodzisko. Znajduje się niecałe 2 km od zamku na skalistym wzgórzu, z którego roztacza się piękna panorama okolicy. Na miejscu można zobaczyć wystawy archeologiczne.'
+        desc: isEn
+          ? 'Reconstructed wooden royal settlement styled as a medieval hill fort, less than 2 km from the castle on a rocky hill with panoramic views. Features archaeological exhibits.'
+          : 'Zrekonstruowana, drewniana osada królewska stylizowana na średniowieczne grodzisko. Znajduje się niecałe 2 km od zamku na skalistym wzgórzu, z którego roztacza się piękna panorama okolicy. Na miejscu można zobaczyć wystawy archeologiczne.'
       },
       {
-        name: 'Sanktuarium Matki Bożej Skałkowej',
+        name: isEn
+          ? 'Sanctuary of Our Lady of Skałkowa'
+          : 'Sanktuarium Matki Bożej Skałkowej',
         href: 'https://maps.google.com/?cid=16731282377356055081',
-        desc: 'Urokliwe miejsce kultu położone na trasie między zamkiem a Górą Birów. Kapliczka została wbudowana bezpośrednio w efektowny jurajski ostaniec skalny.'
+        desc: isEn
+          ? 'Charming place of worship on the trail between the castle and Mount Birów. The chapel was built directly into a striking limestone monolith.'
+          : 'Urokliwe miejsce kultu położone na trasie między zamkiem a Górą Birów. Kapliczka została wbudowana bezpośrednio w efektowny jurajski ostaniec skalny.'
       }
     ]
   },
   {
-    title: 'Najciekawsze atrakcje w bliskiej okolicy',
+    title: isEn
+      ? 'Top attractions in the close vicinity'
+      : 'Najciekawsze atrakcje w bliskiej okolicy',
     atrakcje: [
       {
-        name: 'Zamek Pilcza w Smoleniu',
+        name: isEn ? 'Pilcza Castle in Smoleń' : 'Zamek Pilcza w Smoleniu',
         href: 'https://maps.google.com/?cid=17591700359313949419',
-        desc: 'Malownicze ruiny zamku z XIII/XIV wieku ukryte w gęstym lesie na terenie rezerwatu przyrody (ok. 10 km od Ogrodzieńca). Warto wejść na cylindryczną wieżę, która służy jako doskonały punkt widokowy.'
+        desc: isEn
+          ? 'Picturesque ruins of a 13th/14th century castle hidden in a dense nature reserve forest (approx. 10 km from Ogrodzieniec). Climb the cylindrical tower for great views.'
+          : 'Malownicze ruiny zamku z XIII/XIV wieku ukryte w gęstym lesie na terenie rezerwatu przyrody (ok. 10 km od Ogrodzieńca). Warto wejść na cylindryczną wieżę, która służy jako doskonały punkt widokowy.'
       },
       {
-        name: 'Okiennik Wielki (Piaseczno)',
+        name: isEn
+          ? 'Okiennik Wielki (Piaseczno)'
+          : 'Okiennik Wielki (Piaseczno)',
         href: 'https://maps.google.com/?cid=8960323636799401502',
-        desc: 'Jeden z najbardziej znanych i widowiskowych ostańców skalnych na całej Jurze Krakowsko-Częstochowskiej, charakteryzujący się ogromnym, naturalnym oknem skalnym o średnicy ok. 5 metrów. Kultowe miejsce dla wspinaczy i fotografów.'
+        desc: isEn
+          ? 'One of the most famous and scenic limestone rocks in the Polish Jura, with a natural rock window approx. 5 meters wide. Popular with climbers and photographers.'
+          : 'Jeden z najbardziej znanych i widowiskowych ostańców skalnych na całej Jurze Krakowsko-Częstochowskiej, charakteryzujący się ogromnym, naturalnym oknem skalnym o średnicy ok. 5 metrów. Kultowe miejsce dla wspinaczy i fotografów.'
       }
     ]
   },
   {
-    title: 'Atrakcje nieco dalej od Ogrodzieńca',
+    title: isEn
+      ? 'Attractions slightly further from Ogrodzieniec'
+      : 'Atrakcje nieco dalej od Ogrodzieńca',
     atrakcje: [
       {
-        name: 'Pustynia Błędowska',
+        name: isEn ? 'Błędów Desert' : 'Pustynia Błędowska',
         href: 'https://maps.google.com/?cid=7687765839042211279',
-        desc: 'Największy w Polsce i jeden z największych w Europie obszarów lotnych piasków śródlądowych. Nazywana „Polską Saharą”, oferuje niesamowity, surowy krajobraz.'
+        desc: isEn
+          ? 'Poland\'s largest and one of Europe\'s largest areas of inland shifting sands, known as the "Polish Sahara", with a unique austere landscape.'
+          : 'Największy w Polsce i jeden z największych w Europie obszarów lotnych piasków śródlądowych. Nazywana „Polską Saharą”, oferuje niesamowity, surowy krajobraz.'
       },
       {
-        name: 'Róża Wiatrów (Pustynia Błędowska)',
+        name: isEn
+          ? 'Wind Rose (Błędów Desert)'
+          : 'Róża Wiatrów (Pustynia Błędowska)',
         href: 'https://maps.google.com/?cid=16910030851076839171',
-        desc: 'Najpopularniejszy punkt widokowy i kompleks drewnianych pomostów spacerowych na Pustyni Błędowskiej (od strony Klucz). To idealne miejsce na rozpoczęcie zwiedzania, z tablicami edukacyjnymi i infrastrukturą wypoczynkową.'
+        desc: isEn
+          ? 'The most popular viewpoint and wooden boardwalk complex on the Błędów Desert (Klucze side) with educational boards and rest areas.'
+          : 'Najpopularniejszy punkt widokowy i kompleks drewnianych pomostów spacerowych na Pustyni Błędowskiej (od strony Klucz). To idealne miejsce na rozpoczęcie zwiedzania, z tablicami edukacyjnymi i infrastrukturą wypoczynkową.'
       },
       {
-        name: 'Zamek Pieskowa Skała',
+        name: isEn ? 'Pieskowa Skała Castle' : 'Zamek Pieskowa Skała',
         href: 'http://pieskowaskala.eu/',
-        desc: 'Jeden z najpiękniejszych i najlepiej zachowanych renesansowych zamków w Polsce, położony na terenie Ojcowskiego Parku Narodowego. Królewska rezydencja na skale robi ogromne wrażenie.'
+        desc: isEn
+          ? 'One of Poland\'s most beautiful and best-preserved Renaissance castles, located in Ojców National Park atop a scenic cliff.'
+          : 'Jeden z najpiękniejszych i najlepiej zachowanych renesansowych zamków w Polsce, położony na terenie Ojcowskiego Parku Narodowego. Królewska rezydencja na skale robi ogromne wrażenie.'
       },
       {
-        name: 'Maczuga Herkulesa',
+        name: isEn ? 'Club of Hercules' : 'Maczuga Herkulesa',
         href: 'https://maps.google.com/?cid=17727452261589776555',
-        desc: 'Kultowa, charakterystyczna formacja skalna stojąca dumnie tuż obok zamku w Pieskowej Skale. To najbardziej rozpoznawalny symbol całej Jury Krakowsko-Częstochowskiej.'
+        desc: isEn
+          ? 'Iconic limestone stack standing beside Pieskowa Skała Castle, the most recognizable symbol of the Polish Jura.'
+          : 'Kultowa, charakterystyczna formacja skalna stojąca dumnie tuż obok zamku w Pieskowej Skale. To najbardziej rozpoznawalny symbol całej Jury Krakowsko-Częstochowskiej.'
       }
     ]
   }
 ];
 
 export default function Turystyka() {
+  const locale = useLocale();
+  const isEn = locale === 'en';
+  const grupy = getTourismGroups(isEn);
+
   return (
     <main className="bg-base-100 text-base-content py-16 px-6 md:px-12">
       <section className="max-w-3xl mx-auto">
         <h1 className="text-3xl md:text-4xl font-bold text-primary border-b-2 border-primary pb-2 mb-8">
-          Turystyka
+          {isEn ? 'Tourism' : 'Turystyka'}
         </h1>
 
         <p className="text-base-content/70 mb-10">
-          Ogrodzieniec leży w samym sercu Jury Krakowsko-Częstochowskiej. Oto
-          atrakcje, które warto zobaczyć podczas pobytu. Kliknij nazwę miejsca,
-          aby otworzyć je w mapach Google.
+          {isEn
+            ? 'Ogrodzieniec lies in the heart of the Kraków-Częstochowa Jurassic Highland. Here are the top attractions worth visiting. Click any name to open in Google Maps.'
+            : 'Ogrodzieniec leży w samym sercu Jury Krakowsko-Częstochowskiej. Oto atrakcje, które warto zobaczyć podczas pobytu. Kliknij nazwę miejsca, aby otworzyć je w mapach Google.'}
         </p>
 
         {grupy.map((grupa) => (

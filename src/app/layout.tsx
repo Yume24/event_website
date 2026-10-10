@@ -3,6 +3,7 @@ import './globals.css';
 import React from 'react';
 import Navbar from '@/components/navbar/Navbar';
 import Footer from '@/components/footer/Footer';
+import { GTProvider } from 'gt-next';
 
 export const metadata: Metadata = {
   title: 'Meeting Modelarski Pojazdów Cywilnych Ogrodzieniec',
@@ -17,9 +18,11 @@ export default function RootLayout({
   return (
     <html lang="pl" data-theme="light">
       <body className={'min-h-screen flex flex-col antialiased'}>
-        <Navbar />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <GTProvider>
+          <Navbar />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </GTProvider>
       </body>
     </html>
   );

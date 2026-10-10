@@ -3,11 +3,14 @@
 import { useState } from 'react';
 import NavbarHorizontal from '@/components/navbar/navbarHorizontal/NavbarHorizontal';
 import NavbarVertical from '@/components/navbar/navbarVertical/NavbarVertical';
-import { menuLinks } from '@/components/navbar/MenuLinks';
+import { getMenuLinks } from '@/components/navbar/MenuLinks';
+import { useLocale } from 'gt-next';
 
 export default function Navbar() {
   const [isVerticalNavbarOpen, setIsVerticalNavbarOpen] =
     useState<boolean>(false);
+  const locale = useLocale();
+  const menuLinks = getMenuLinks(locale);
 
   return (
     <nav>

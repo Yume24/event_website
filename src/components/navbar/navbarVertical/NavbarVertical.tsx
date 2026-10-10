@@ -5,7 +5,9 @@ import type { MenuLink } from '@/types/types';
 import { AnimatePresence, motion } from 'motion/react';
 import SubmenuVertical from '@/components/navbar/navbarVertical/SubmenuVertical';
 import AuthButtonsVertical from '@/components/navbar/navbarVertical/AuthButtonsVertical';
+import LanguageSelector from '@/components/navbar/LanguageSelector';
 import { useCallback } from 'react';
+import { useLocale } from 'gt-next';
 
 export default function NavbarVertical({
   menuLinks,
@@ -16,6 +18,7 @@ export default function NavbarVertical({
   isOpen: boolean;
   toggleVerticalNavbarAction: (param: boolean) => void;
 }) {
+  const locale = useLocale();
   const onLinkClick = useCallback(() => {
     toggleVerticalNavbarAction(false);
   }, [toggleVerticalNavbarAction]);
@@ -65,6 +68,14 @@ export default function NavbarVertical({
                 )}
               </li>
             ))}
+            <li className="m-1 mt-4">
+              <div className="flex items-center justify-between p-2 rounded-lg bg-neutral/80 border border-neutral-content/10">
+                <span className="text-sm font-medium">
+                  {locale === 'en' ? 'Language' : 'Język'}
+                </span>
+                <LanguageSelector />
+              </div>
+            </li>
             <AuthButtonsVertical onLinkClick={onLinkClick} />
           </motion.ul>
         </>
